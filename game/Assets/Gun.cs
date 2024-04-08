@@ -17,9 +17,9 @@ public class Gun : MonoBehaviour
     }
 
     void Shoot() {
+     	muzzleFlash.Play();
         RaycastHit hit;
-        muzzleFlash.Play();
-      
+  
 	    if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range) ) {
             Debug.Log(hit.transform.name);
 
