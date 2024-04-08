@@ -1,0 +1,1359 @@
+<changelist name="Uncommitted_changes_before_rebase_[Changes]2" date="1712613229830" recycled="false" toDelete="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before rebase [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/mvdfrm/UnityEngine.UnityWebRequestModule.dll_770A838761F141A3.mvfrm" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/mvdfrm/UnityEditor.WebGL.Extensions.dll_B33AB7F9C606F55B.mvfrm" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.EditorCoroutines.Editor.ref.dll" />
+    <option name="AFTER_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.EditorCoroutines.Editor.ref.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/Unity.EditorCoroutines.Editor.ref.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/mvdfrm/UnityEngine.TilemapModule.dll_9905DA407382ED51.mvfrm" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/CachedNodeOutput/6615dde540011880a28edc41184eda6d_out" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/PackageCache/com.unity.settings-manager@2.0.1/.signature" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/CachedNodeOutput/cfdd3f198b3fd31af1c0f23412d90e09_out" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/mvdfrm/UnityEngine.UnityAnalyticsModule.dll_0AF4659DB6DF1672.mvfrm" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.Flow.ref.dll" />
+    <option name="AFTER_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.Flow.ref.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/Unity.VisualScripting.Flow.ref.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/mvdfrm/UnityEngine.VFXModule.dll_98FE2F603F30171B.mvfrm" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/mvdfrm/UnityEngine.UnityConnectModule.dll_28CF5B701398CA06.mvfrm" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.SettingsProvider.Editor.dll" />
+    <option name="AFTER_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.SettingsProvider.Editor.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/Unity.VisualScripting.SettingsProvider.Editor.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/CachedNodeOutput/01ee646c27b580962a48565bb55cde95_out" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/ArtifactDB" />
+    <option name="AFTER_PATH" value="Library/ArtifactDB" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/ArtifactDB" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/CachedNodeOutput/49bc7575f4157ff3e9447d6e45dafff0_out" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll" />
+    <option name="AFTER_PATH" value="Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/mvdfrm/UnityEngine.ContentLoadModule.dll_1508707ECF6B2232.mvfrm" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/backend2.traceevents" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/CachedNodeOutput/f7b9b7a1a40246b96f7a7d49e9cd19ad_out" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/ScriptAssemblies/Unity.VisualScripting.Shared.Editor.dll" />
+    <option name="AFTER_PATH" value="Library/ScriptAssemblies/Unity.VisualScripting.Shared.Editor.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/Unity.VisualScripting.Shared.Editor.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/mvdfrm/UnityEngine.HotReloadModule.dll_7B388EAF460B81B9.mvfrm" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/mvdfrm/UnityEngine.LocalizationModule.dll_F95916C962148F1A.mvfrm" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/CachedNodeOutput/b6c7e06488e1f8b99521ecc02125cafe_out" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/CachedNodeOutput/cc89e0b5b5e0e96be86ca693ec1d614d_out" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/mvdfrm/UnityEngine.DSPGraphModule.dll_E7B2136087F7E68E.mvfrm" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/mvdfrm/UnityEngine.GIModule.dll_8FD1E78CE3C8ABF3.mvfrm" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/mvdfrm/UnityEngine.ARModule.dll_B1086382A53722A2.mvfrm" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.Settings.Editor.dll" />
+    <option name="AFTER_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.Settings.Editor.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/Unity.Settings.Editor.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/mvdfrm/Unity.Plastic.Antlr3.Runtime.dll_E340043392540AF9.mvfrm" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.ref.dll" />
+    <option name="AFTER_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.ref.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.ref.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/mvdfrm/UnityEngine.UnityTestProtocolModule.dll_7D4F6C20BDB87E92.mvfrm" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/CachedNodeOutput/66e00e4bf5f99966e91f7ccd8be20399_out" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/mvdfrm/UnityEditor.SceneViewModule.dll_6A1A3788859E5E9F.mvfrm" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/CachedNodeOutput/ad636609641ab804ac370e9fda0fb6f6_out" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/ScriptAssemblies/UnityEditor.TestRunner.dll" />
+    <option name="AFTER_PATH" value="Library/ScriptAssemblies/UnityEditor.TestRunner.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/UnityEditor.TestRunner.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.rsp2" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.SettingsProvider.Editor.ref.dll" />
+    <option name="AFTER_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.SettingsProvider.Editor.ref.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/Unity.VisualScripting.SettingsProvider.Editor.ref.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/mvdfrm/UnityEngine.AndroidJNIModule.dll_A996A0AA26A97617.mvfrm" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/CachedNodeOutput/56abf988cf8f2595fe43a6a5b6ef689d_out" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.rsp2" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/ScriptAssemblies/Unity.Performance.Profile-Analyzer.Editor.dll" />
+    <option name="AFTER_PATH" value="Library/ScriptAssemblies/Unity.Performance.Profile-Analyzer.Editor.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/Unity.Performance.Profile-Analyzer.Editor.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/PackageCache/com.unity.settings-manager@2.0.1/Documentation~/images/settings.gif" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/CachedNodeOutput/0777e397f3d62cfc44ea6d0c42232c6a_out" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll" />
+    <option name="AFTER_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/ScriptAssemblies/UnityEngine.UI.dll" />
+    <option name="AFTER_PATH" value="Library/ScriptAssemblies/UnityEngine.UI.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/UnityEngine.UI.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/CachedNodeOutput/1c9802753d7dcf754da3c2b413b3cf42_out" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/mvdfrm/UnityEngine.UnityCurlModule.dll_2D0C71DADAEC5824.mvfrm" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/CachedNodeOutput/716c654e4994df9e2be5d967230b7ba5_out" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.Timeline.ref.dll" />
+    <option name="AFTER_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.Timeline.ref.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/Unity.Timeline.ref.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.VSCode.Editor.ref.dll" />
+    <option name="AFTER_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.VSCode.Editor.ref.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/Unity.VSCode.Editor.ref.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll" />
+    <option name="AFTER_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection1.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/mvdfrm/UnityEngine.SharedInternalsModule.dll_E97CBAB2CE2AA274.mvfrm" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/ScriptAssemblies/Unity.VisualScripting.Core.dll" />
+    <option name="AFTER_PATH" value="Library/ScriptAssemblies/Unity.VisualScripting.Core.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/Unity.VisualScripting.Core.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.Core.dll" />
+    <option name="AFTER_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.Core.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/Unity.VisualScripting.Core1.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/ScriptAssemblies/Unity.VisualScripting.Flow.Editor.dll" />
+    <option name="AFTER_PATH" value="Library/ScriptAssemblies/Unity.VisualScripting.Flow.Editor.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/Unity.VisualScripting.Flow.Editor.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/CachedNodeOutput/894e1f37812a7307cdbbb85548006556_out" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/mvdfrm/UnityEngine.VRModule.dll_45DB6332461B4EFD.mvfrm" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/ArtifactDB-lock" />
+    <option name="AFTER_PATH" value="Library/ArtifactDB-lock" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/ArtifactDB-lock" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/PackageCache/com.unity.settings-manager@2.0.1/Content/Options.png" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/CachedNodeOutput/f8b03df79aabe045ea104424a80ed674_out" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/mvdfrm/UnityEngine.TextCoreTextEngineModule.dll_31D4CD858DF883EC.mvfrm" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/1900b0aE.dag_fsmtime" />
+    <option name="AFTER_PATH" value="Library/Bee/1900b0aE.dag_fsmtime" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/1900b0aE.dag_fsmtime" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/ScriptAssemblies/Unity.VisualScripting.State.Editor.dll" />
+    <option name="AFTER_PATH" value="Library/ScriptAssemblies/Unity.VisualScripting.State.Editor.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/Unity.VisualScripting.State.Editor.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.Rider.Editor.dll" />
+    <option name="AFTER_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.Rider.Editor.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/Unity.Rider.Editor.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/CachedNodeOutput/993176e1915f63c86ed6906267cfbe7a_out" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.VisualStudio.Editor.dll" />
+    <option name="AFTER_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.VisualStudio.Editor.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/Unity.VisualStudio.Editor.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/ScriptAssemblies/Unity.VisualScripting.State.dll" />
+    <option name="AFTER_PATH" value="Library/ScriptAssemblies/Unity.VisualScripting.State.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/Unity.VisualScripting.State.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/1900b0aE.dag.payloads" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/mvdfrm/UnityEngine.VirtualTexturingModule.dll_18DCC686EFC539EE.mvfrm" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll" />
+    <option name="AFTER_PATH" value="Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/Unity.PlasticSCM.Editor.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/CachedNodeOutput/1b0b8fa38664f43572416ff55e4123ba_out" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.PlasticSCM.Editor.dll" />
+    <option name="AFTER_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.PlasticSCM.Editor.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/Unity.PlasticSCM.Editor1.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/backend1.traceevents" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.State.Editor.rsp2" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/SourceAssetDB" />
+    <option name="AFTER_PATH" value="Library/SourceAssetDB" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/SourceAssetDB" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/mvdfrm/UnityEditor.UIElementsSamplesModule.dll_C18CB62E63BD293C.mvfrm" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/mvdfrm/UnityEngine.TextRenderingModule.dll_0328AA7CC90570B2.mvfrm" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/CachedNodeOutput/b4bdd06cc7aa2caa673d4f0874566e67_out" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.Shared.Editor.ref.dll" />
+    <option name="AFTER_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.Shared.Editor.ref.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/Unity.VisualScripting.Shared.Editor.ref.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll" />
+    <option name="AFTER_PATH" value="Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/Unity.TextMeshPro.Editor.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/mvdfrm/UnityEditor.DeviceSimulatorModule.dll_F3CCBBBB651CE1AC.mvfrm" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/ScriptAssemblies/Unity.Settings.Editor.dll" />
+    <option name="AFTER_PATH" value="Library/ScriptAssemblies/Unity.Settings.Editor.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/Unity.Settings.Editor1.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/mvdfrm/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll_6C5FE40B84E86695.mvfrm" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/mvdfrm/Unity.VisualScripting.IonicZip.dll_AFC4A1775743CCD8.mvfrm" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.TextMeshPro.Editor.dll" />
+    <option name="AFTER_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.TextMeshPro.Editor.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/Unity.TextMeshPro.Editor1.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/ScriptAssemblies/UnityEngine.TestRunner.dll" />
+    <option name="AFTER_PATH" value="Library/ScriptAssemblies/UnityEngine.TestRunner.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/UnityEngine.TestRunner.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/CachedNodeOutput/81fa5444132948d779b6414b95bd53a6_out" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/mvdfrm/UnityEditor.CoreModule.dll_3379CB4C7FE50825.mvfrm" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/mvdfrm/UnityEngine.NVIDIAModule.dll_0168DA6CFE0C31BC.mvfrm" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.Core.rsp2" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.SettingsProvider.Editor.rsp2" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/mvdfrm/UnityEditor.Graphs.dll_17E83B279FED2D57.mvfrm" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/mvdfrm/UnityEditor.DiagnosticsModule.dll_ACF9633F45AAC8FA.mvfrm" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.VSCode.Editor.rsp2" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/mvdfrm/UnityEngine.PropertiesModule.dll_011F2A035FD5CB44.mvfrm" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/CachedNodeOutput/9ae1191dcbe60be6b38382cf56928b64_out" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.Shared.Editor.dll" />
+    <option name="AFTER_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.Shared.Editor.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/Unity.VisualScripting.Shared.Editor1.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.Performance.Profile-Analyzer.Editor.rsp2" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/mvdfrm/UnityEngine.UIElementsModule.dll_2BFC251EDFCE208C.mvfrm" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.rsp2" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.Timeline.Editor.rsp2" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.EditorCoroutines.Editor.dll" />
+    <option name="AFTER_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.EditorCoroutines.Editor.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/Unity.EditorCoroutines.Editor.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/mvdfrm/UnityEngine.XRModule.dll_789A2636CF559C5B.mvfrm" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/CachedNodeOutput/2f3368343f33a730472c6b2249150b41_out" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/mvdfrm/UnityEngine.ClothModule.dll_1D0ACD9483F3C04D.mvfrm" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/mvdfrm/UnityEditor.SceneTemplateModule.dll_2D449619FDB03C34.mvfrm" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/ScriptAssemblies/Unity.Timeline.Editor.dll" />
+    <option name="AFTER_PATH" value="Library/ScriptAssemblies/Unity.Timeline.Editor.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/Unity.Timeline.Editor.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/ScriptAssemblies/Unity.Timeline.dll" />
+    <option name="AFTER_PATH" value="Library/ScriptAssemblies/Unity.Timeline.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/Unity.Timeline.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/mvdfrm/UnityEngine.VideoModule.dll_DB2BF5046C68FD0E.mvfrm" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/mvdfrm/UnityEditor.EditorToolbarModule.dll_09A5255BFEC391FC.mvfrm" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/ScriptAssemblies/Unity.EditorCoroutines.Editor.dll" />
+    <option name="AFTER_PATH" value="Library/ScriptAssemblies/Unity.EditorCoroutines.Editor.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/Unity.EditorCoroutines.Editor1.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/mvdfrm/UnityEngine.UnityAnalyticsCommonModule.dll_4AFED1761D51F66D.mvfrm" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.TestTools.CodeCoverage.Editor.dll" />
+    <option name="AFTER_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.TestTools.CodeCoverage.Editor.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/Unity.TestTools.CodeCoverage.Editor.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/CachedNodeOutput/c9401dd50130c49166cecc4a94f00db3_out" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/1900b0aE.dag/UnityEditor.TestRunner.dll" />
+    <option name="AFTER_PATH" value="Library/Bee/artifacts/1900b0aE.dag/UnityEditor.TestRunner.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/UnityEditor.TestRunner1.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/CachedNodeOutput/a6d78cfc68642ed239bdc3179776d9f2_out" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/mvdfrm/UnityEditor.PresetsUIModule.dll_E6D08D6292D3E996.mvfrm" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/CachedNodeOutput/993176e1b0c146479d4a9ee196703fcf_out" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/mvdfrm/UnityEngine.WindModule.dll_CCE979C7B920F1B9.mvfrm" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/SourceAssetDB-lock" />
+    <option name="AFTER_PATH" value="Library/SourceAssetDB-lock" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/SourceAssetDB-lock" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/mvdfrm/UnityEngine.UIModule.dll_F3093CACA460C985.mvfrm" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.Flow.Editor.dll" />
+    <option name="AFTER_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.Flow.Editor.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/Unity.VisualScripting.Flow.Editor1.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/mvdfrm/UnityEngine.InputLegacyModule.dll_0D37325C98DA3036.mvfrm" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.TestTools.CodeCoverage.Editor.rsp2" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/PackageCache/com.unity.timeline@1.7.6/Editor/Localization/ja.po" />
+    <option name="AFTER_PATH" value="Library/PackageCache/com.unity.timeline@1.7.6/Editor/Localization/ja.po" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/ja.po" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.Shared.Editor.rsp2" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.State.Editor.ref.dll" />
+    <option name="AFTER_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.State.Editor.ref.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/Unity.VisualScripting.State.Editor.ref.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.CollabProxy.Editor.dll" />
+    <option name="AFTER_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.CollabProxy.Editor.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/Unity.CollabProxy.Editor.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/mvdfrm/UnityEngine.SpriteMaskModule.dll_BD105D550E59FC82.mvfrm" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/mvdfrm/UnityEngine.AudioModule.dll_B6227099A9D6E169.mvfrm" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/mvdfrm/UnityEngine.ProfilerModule.dll_14A6EB2DAEF09C7A.mvfrm" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.EditorCoroutines.Editor.rsp2" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.Flow.dll" />
+    <option name="AFTER_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.Flow.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/Unity.VisualScripting.Flow.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/mvdfrm/UnityEngine.InputModule.dll_1C98384A200F060D.mvfrm" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/mvdfrm/UnityEngine.GridModule.dll_340BBA8D403F0947.mvfrm" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll" />
+    <option name="AFTER_PATH" value="Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/Unity.CollabProxy.Editor1.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/TundraBuildState.state" />
+    <option name="AFTER_PATH" value="Library/Bee/TundraBuildState.state" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/TundraBuildState.state" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/mvdfrm/UnityEngine.AccessibilityModule.dll_5FEA01B0FE2663D1.mvfrm" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/ScriptAssemblies/UnityEditor.UI.dll" />
+    <option name="AFTER_PATH" value="Library/ScriptAssemblies/UnityEditor.UI.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/UnityEditor.UI.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/ScriptAssemblies/Unity.VisualScripting.SettingsProvider.Editor.dll" />
+    <option name="AFTER_PATH" value="Library/ScriptAssemblies/Unity.VisualScripting.SettingsProvider.Editor.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/Unity.VisualScripting.SettingsProvider.Editor1.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/1900b0aE.dag/UnityEditor.TestRunner.rsp2" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/mvdfrm/UnityEngine.DirectorModule.dll_E260B1F71597156D.mvfrm" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/mvdfrm/UnityEngine.IMGUIModule.dll_EE8210007008754A.mvfrm" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.Performance.Profile-Analyzer.Editor.ref.dll" />
+    <option name="AFTER_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.Performance.Profile-Analyzer.Editor.ref.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/Unity.Performance.Profile-Analyzer.Editor.ref.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/ScriptAssemblies/Unity.TextMeshPro.dll" />
+    <option name="AFTER_PATH" value="Library/ScriptAssemblies/Unity.TextMeshPro.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/Unity.TextMeshPro.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/mvdfrm/UnityEditor.UIBuilderModule.dll_7FF3019D03340AC5.mvfrm" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/mvdfrm/UnityEngine.StreamingModule.dll_AE84BDF9BA601D75.mvfrm" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.PlasticSCM.Editor.rsp2" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/mvdfrm/Unity.VisualScripting.YamlDotNet.dll_295D7F5050B34F24.mvfrm" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll" />
+    <option name="AFTER_PATH" value="Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/Unity.VisualStudio.Editor1.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.Timeline.Editor.ref.dll" />
+    <option name="AFTER_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.Timeline.Editor.ref.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/Unity.Timeline.Editor.ref.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.State.ref.dll" />
+    <option name="AFTER_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.State.ref.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/Unity.VisualScripting.State.ref.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.Rider.Editor.rsp2" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/mvdfrm/UnityEngine.dll_7DCEC0F38A31D545.mvfrm" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.VisualStudio.Editor.rsp2" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.Flow.Editor.ref.dll" />
+    <option name="AFTER_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.Flow.Editor.ref.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/Unity.VisualScripting.Flow.Editor.ref.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/1900b0aE.dag/UnityEngine.TestRunner.ref.dll" />
+    <option name="AFTER_PATH" value="Library/Bee/artifacts/1900b0aE.dag/UnityEngine.TestRunner.ref.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/UnityEngine.TestRunner.ref.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.TextMeshPro.Editor.ref.dll" />
+    <option name="AFTER_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.TextMeshPro.Editor.ref.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/Unity.TextMeshPro.Editor.ref.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/CachedNodeOutput/6bbd061cbe8aaa7ed83415326fb126a8_out" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll" />
+    <option name="AFTER_PATH" value="Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/UnityEngine.UI.ref.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.TestTools.CodeCoverage.Editor.ref.dll" />
+    <option name="AFTER_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.TestTools.CodeCoverage.Editor.ref.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/Unity.TestTools.CodeCoverage.Editor.ref.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/mvdfrm/UnityEngine.JSONSerializeModule.dll_C0018AECFD61C45B.mvfrm" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/mvdfrm/UnityEngine.UnityWebRequestWWWModule.dll_FC9712E17DB84058.mvfrm" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.VSCode.Editor.dll" />
+    <option name="AFTER_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.VSCode.Editor.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/Unity.VSCode.Editor.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/mvdfrm/UnityEngine.TextCoreFontEngineModule.dll_E9EC9713FE74CACE.mvfrm" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.Settings.Editor.rsp2" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/mvdfrm/UnityEngine.UnityWebRequestAudioModule.dll_27BC681089D422A7.mvfrm" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/mvdfrm/UnityEngine.PhysicsModule.dll_DFC2F7508607C35A.mvfrm" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/mvdfrm/UnityEngine.Physics2DModule.dll_4695C09A0BD55DCC.mvfrm" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/CachedNodeOutput/c101bb7d762cdec893b3e8e9313c0fe6_out" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/mvdfrm/UnityEngine.PerformanceReportingModule.dll_AFC014320369580F.mvfrm" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/CachedNodeOutput/7ed0eaa03bce0dc98e6a434977339e0e_out" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/mvdfrm/UnityEngine.GameCenterModule.dll_D3E3EAC4ECEA6708.mvfrm" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/1900b0aE.dag" />
+    <option name="AFTER_PATH" value="Library/Bee/1900b0aE.dag" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/1900b0aE.dag" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/CachedNodeOutput/bd01c8b708774fc3902cda749776d9f2_out" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/CachedNodeOutput/2ddd2c942d6a7a28ed6959001c3c9004_out" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/ScriptAssemblies/Unity.Rider.Editor.dll" />
+    <option name="AFTER_PATH" value="Library/ScriptAssemblies/Unity.Rider.Editor.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/Unity.Rider.Editor1.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/CachedNodeOutput/055ed6d694b91965c70431fb78e13d43_out" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.Core.ref.dll" />
+    <option name="AFTER_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.Core.ref.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/Unity.VisualScripting.Core.ref.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/mvdfrm/Unity.Plastic.Newtonsoft.Json.dll_41CE71F42A4FD22C.mvfrm" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/mvdfrm/Unity.VisualScripting.Antlr3.Runtime.dll_DACAA631817C5F43.mvfrm" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/mvdfrm/UnityEditor.WindowsStandalone.Extensions.dll_98175886940A68CB.mvfrm" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/CachedNodeOutput/b49a15612d392a3f064c0d60d1c6aa55_out" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/CachedNodeOutput/2c15e3570ab386e21f3abb7948987246_out" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/CachedNodeOutput/b08e00f50bfd49dfce6abaa3a0297fbd_out" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.PlasticSCM.Editor.ref.dll" />
+    <option name="AFTER_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.PlasticSCM.Editor.ref.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/Unity.PlasticSCM.Editor.ref.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.TextMeshPro.ref.dll" />
+    <option name="AFTER_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.TextMeshPro.ref.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/Unity.TextMeshPro.ref.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.TextMeshPro.rsp2" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/CachedNodeOutput/8bf10c25d4e5fac937ad0bfaecb158dc_out" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/mvdfrm/UnityEditor.dll_4B2A7A1B2BBE4860.mvfrm" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.Timeline.dll" />
+    <option name="AFTER_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.Timeline.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/Unity.Timeline1.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/tundra.digestcache" />
+    <option name="AFTER_PATH" value="Library/Bee/tundra.digestcache" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/tundra.digestcache" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/mvdfrm/Unity.VisualScripting.TextureAssets.dll_C07BA8A41180AD1C.mvfrm" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.Timeline.Editor.dll" />
+    <option name="AFTER_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.Timeline.Editor.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/Unity.Timeline.Editor1.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/mvdfrm/UnityEditor.UnityConnectModule.dll_3B6FD7611910C95B.mvfrm" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.TextMeshPro.dll" />
+    <option name="AFTER_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.TextMeshPro.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/Unity.TextMeshPro1.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Style.catalog" />
+    <option name="AFTER_PATH" value="Library/Style.catalog" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/Style.catalog" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/mvdfrm/UnityEngine.CrashReportingModule.dll_9842AB879CA638E8.mvfrm" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.dll" />
+    <option name="AFTER_PATH" value="Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/UnityEditor.UI1.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/CachedNodeOutput/4feca0b32add8f8de94ea544fc4d1387_out" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.State.dll" />
+    <option name="AFTER_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.State.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/Unity.VisualScripting.State1.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.Flow.rsp2" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/mvdfrm/UnityEngine.CoreModule.dll_569A9E9F27EA7350.mvfrm" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.Flow.Editor.rsp2" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/CachedNodeOutput/136352639f10ab74ebd975f63f5e459a_out" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll" />
+    <option name="AFTER_PATH" value="Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/UnityEditor.UI.ref.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/mvdfrm/UnityEditor.GraphViewModule.dll_2B6A5480907B9191.mvfrm" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/mvdfrm/UnityEngine.ImageConversionModule.dll_656B7BDD56FCA724.mvfrm" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/CachedNodeOutput/8802ae3089b8894ced78ec0917bad3d6_out" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/CachedNodeOutput/dc5701cc80bd106fb44719f226e03b62_out" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/mvdfrm/UnityEngine.ScreenCaptureModule.dll_D9E9387211CDF0BD.mvfrm" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Search/transactions.db" />
+    <option name="AFTER_PATH" value="Library/Search/transactions.db" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/transactions.db" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.VisualStudio.Editor.ref.dll" />
+    <option name="AFTER_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.VisualStudio.Editor.ref.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/Unity.VisualStudio.Editor.ref.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/CachedNodeOutput/7a2451f036b0f9736c454014c9454a08_out" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/CachedNodeOutput/76ca83e605a1a4ccb344ba5ddd70cf7a_out" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/mvdfrm/UnityEngine.TLSModule.dll_181F96F168C2ADAE.mvfrm" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.Performance.Profile-Analyzer.Editor.dll" />
+    <option name="AFTER_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.Performance.Profile-Analyzer.Editor.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/Unity.Performance.Profile-Analyzer.Editor1.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/mvdfrm/UnityEngine.SubsystemsModule.dll_27BDC3B6DCA1E495.mvfrm" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/mvdfrm/UnityEngine.AnimationModule.dll_F9EFD0A96AD86637.mvfrm" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/1900b0aE.dag/UnityEngine.TestRunner.dll" />
+    <option name="AFTER_PATH" value="Library/Bee/artifacts/1900b0aE.dag/UnityEngine.TestRunner.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/UnityEngine.TestRunner1.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/CachedNodeOutput/df140c510e714029f7f51ec9982ab789_out" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.Core.Editor.dll" />
+    <option name="AFTER_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.Core.Editor.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/Unity.VisualScripting.Core.Editor.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/mvdfrm/UnityEngine.AIModule.dll_F7959E7F4819C3D9.mvfrm" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.Timeline.rsp2" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/mvdfrm/UnityEngine.SpriteShapeModule.dll_95534498B68AB24F.mvfrm" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/mvdfrm/UnityEngine.SubstanceModule.dll_8B2FD24305B31B83.mvfrm" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/1900b0aE.dag/UnityEngine.TestRunner.rsp2" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/mvdfrm/UnityEngine.ClusterRendererModule.dll_F9797E2CD4D7EF30.mvfrm" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/ScriptAssemblies/Unity.VSCode.Editor.dll" />
+    <option name="AFTER_PATH" value="Library/ScriptAssemblies/Unity.VSCode.Editor.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/Unity.VSCode.Editor1.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.dll" />
+    <option name="AFTER_PATH" value="Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/UnityEngine.UI1.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/mvdfrm/UnityEngine.ClusterInputModule.dll_BB0C4C76CA989C21.mvfrm" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/CachedNodeOutput/b36473922d42b5519ffc86b210274f1d_out" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.TextMeshPro.Editor.rsp2" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/mvdfrm/UnityEngine.ParticleSystemModule.dll_EB54F4D40AB7C476.mvfrm" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/mvdfrm/UnityEngine.TerrainModule.dll_FA0972BF5BC60C48.mvfrm" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.Settings.Editor.ref.dll" />
+    <option name="AFTER_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.Settings.Editor.ref.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/Unity.Settings.Editor.ref.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/mvdfrm/UnityEngine.AssetBundleModule.dll_7BF2173E00E87A45.mvfrm" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.State.rsp2" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/CachedNodeOutput/11e757118488dac881a40de0a00ff7bc_out" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.CollabProxy.Editor.rsp2" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.rsp2" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/1900b0aE.dag_derived" />
+    <option name="AFTER_PATH" value="Library/Bee/1900b0aE.dag_derived" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/1900b0aE.dag_derived" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/mvdfrm/UnityEngine.UnityWebRequestAssetBundleModule.dll_38093765891DBEC3.mvfrm" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/CachedNodeOutput/2b88c3aaf4611ef15df9816057101bc0_out" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/1900b0aE.dag/UnityEditor.TestRunner.ref.dll" />
+    <option name="AFTER_PATH" value="Library/Bee/artifacts/1900b0aE.dag/UnityEditor.TestRunner.ref.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/UnityEditor.TestRunner.ref.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/mvdfrm/UnityEditor.TextCoreFontEngineModule.dll_6B8D1BC0EB770C03.mvfrm" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.CollabProxy.Editor.ref.dll" />
+    <option name="AFTER_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.CollabProxy.Editor.ref.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/Unity.CollabProxy.Editor.ref.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/CachedNodeOutput/7bcaeb1e7007330793d76286fcde7a67_out" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Temp/__Backupscenes/0.backup" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/mvdfrm/UnityEngine.UmbraModule.dll_30F71CB236FD8CDC.mvfrm" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/mvdfrm/UnityEditor.TextCoreTextEngineModule.dll_B37552327AFAC521.mvfrm" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/CachedNodeOutput/df94a184b388c97dcda08fe8447337cb_out" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll" />
+    <option name="AFTER_PATH" value="Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/Unity.TestTools.CodeCoverage.Editor.OpenCover.Model1.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.ref.dll" />
+    <option name="AFTER_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.ref.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.ref.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/mvdfrm/UnityEngine.VehiclesModule.dll_5A23AB768FC0E508.mvfrm" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/mvdfrm/UnityEngine.UnityWebRequestTextureModule.dll_B36E4B008FADA35C.mvfrm" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/ScriptAssemblies/Unity.VisualScripting.Core.Editor.dll" />
+    <option name="AFTER_PATH" value="Library/ScriptAssemblies/Unity.VisualScripting.Core.Editor.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/Unity.VisualScripting.Core.Editor1.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/expandedItems" />
+    <option name="AFTER_PATH" value="Library/expandedItems" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/expandedItems" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/CachedNodeOutput/ccafc0a4336284770884fd143bdf0498_out" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.Core.Editor.rsp2" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/mvdfrm/UnityEditor.UIElementsModule.dll_2B4DB7D6DD8A0741.mvfrm" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/TundraBuildState.state.map" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.Rider.Editor.ref.dll" />
+    <option name="AFTER_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.Rider.Editor.ref.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/Unity.Rider.Editor.ref.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/CachedNodeOutput/ab383ef37ac344633cc6ff772aa8d7bb_out" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.dll" />
+    <option name="AFTER_PATH" value="Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/Unity.TestTools.CodeCoverage.Editor1.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/CachedNodeOutput/f4d4adf71a5e1f7e6b5733bf4e2ad79c_out" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.State.Editor.dll" />
+    <option name="AFTER_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.State.Editor.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/Unity.VisualScripting.State.Editor1.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/mvdfrm/UnityEngine.TerrainPhysicsModule.dll_EBCF9DA723FABF03.mvfrm" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.Core.Editor.ref.dll" />
+    <option name="AFTER_PATH" value="Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.Core.Editor.ref.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/Unity.VisualScripting.Core.Editor.ref.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/ScriptAssemblies/Unity.VisualScripting.Flow.dll" />
+    <option name="AFTER_PATH" value="Library/ScriptAssemblies/Unity.VisualScripting.Flow.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/Unity.VisualScripting.Flow1.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/artifacts/mvdfrm/UnityEditor.QuickSearchModule.dll_3808E44C9E81C553.mvfrm" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+</changelist>

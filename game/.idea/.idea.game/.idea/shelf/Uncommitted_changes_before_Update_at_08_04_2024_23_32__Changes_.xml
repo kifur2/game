@@ -1,0 +1,194 @@
+<changelist name="Uncommitted_changes_before_Update_at_08_04_2024_23_32_[Changes]" date="1712611975979" recycled="false" toDelete="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_Update_at_08_04_2024_23_32_[Changes]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Update at 08.04.2024 23:32 [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" value="Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll" />
+    <option name="AFTER_PATH" value="Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_Update_at_08_04_2024_23_32_[Changes]/Unity.CollabProxy.Editor.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/TundraBuildState.state" />
+    <option name="AFTER_PATH" value="Library/Bee/TundraBuildState.state" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_Update_at_08_04_2024_23_32_[Changes]/TundraBuildState.state" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/ScriptAssemblies/UnityEditor.UI.dll" />
+    <option name="AFTER_PATH" value="Library/ScriptAssemblies/UnityEditor.UI.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_Update_at_08_04_2024_23_32_[Changes]/UnityEditor.UI.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/ScriptAssemblies/Unity.VisualScripting.SettingsProvider.Editor.dll" />
+    <option name="AFTER_PATH" value="Library/ScriptAssemblies/Unity.VisualScripting.SettingsProvider.Editor.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_Update_at_08_04_2024_23_32_[Changes]/Unity.VisualScripting.SettingsProvider.Editor.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/ScriptAssemblies/Unity.TextMeshPro.dll" />
+    <option name="AFTER_PATH" value="Library/ScriptAssemblies/Unity.TextMeshPro.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_Update_at_08_04_2024_23_32_[Changes]/Unity.TextMeshPro.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/APIUpdater/project-dependencies.graph" />
+    <option name="AFTER_PATH" value="Library/APIUpdater/project-dependencies.graph" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_Update_at_08_04_2024_23_32_[Changes]/project-dependencies.graph" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/ArtifactDB" />
+    <option name="AFTER_PATH" value="Library/ArtifactDB" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_Update_at_08_04_2024_23_32_[Changes]/ArtifactDB" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll" />
+    <option name="AFTER_PATH" value="Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_Update_at_08_04_2024_23_32_[Changes]/Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/ScriptAssemblies/Unity.VisualScripting.Shared.Editor.dll" />
+    <option name="AFTER_PATH" value="Library/ScriptAssemblies/Unity.VisualScripting.Shared.Editor.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_Update_at_08_04_2024_23_32_[Changes]/Unity.VisualScripting.Shared.Editor.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll" />
+    <option name="AFTER_PATH" value="Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_Update_at_08_04_2024_23_32_[Changes]/Unity.VisualStudio.Editor.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/ScriptAssemblies/UnityEditor.TestRunner.dll" />
+    <option name="AFTER_PATH" value="Library/ScriptAssemblies/UnityEditor.TestRunner.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_Update_at_08_04_2024_23_32_[Changes]/UnityEditor.TestRunner.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/ScriptAssemblies/Unity.Performance.Profile-Analyzer.Editor.dll" />
+    <option name="AFTER_PATH" value="Library/ScriptAssemblies/Unity.Performance.Profile-Analyzer.Editor.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_Update_at_08_04_2024_23_32_[Changes]/Unity.Performance.Profile-Analyzer.Editor.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/ScriptAssemblies/UnityEngine.UI.dll" />
+    <option name="AFTER_PATH" value="Library/ScriptAssemblies/UnityEngine.UI.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_Update_at_08_04_2024_23_32_[Changes]/UnityEngine.UI.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/ShaderCache/EditorEncounteredVariants" />
+    <option name="AFTER_PATH" value="Library/ShaderCache/EditorEncounteredVariants" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_Update_at_08_04_2024_23_32_[Changes]/EditorEncounteredVariants" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/ScriptAssemblies/Unity.Rider.Editor.dll" />
+    <option name="AFTER_PATH" value="Library/ScriptAssemblies/Unity.Rider.Editor.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_Update_at_08_04_2024_23_32_[Changes]/Unity.Rider.Editor.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/ScriptAssemblies/Unity.VisualScripting.Core.dll" />
+    <option name="AFTER_PATH" value="Library/ScriptAssemblies/Unity.VisualScripting.Core.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_Update_at_08_04_2024_23_32_[Changes]/Unity.VisualScripting.Core.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/ScriptAssemblies/Unity.VisualScripting.Flow.Editor.dll" />
+    <option name="AFTER_PATH" value="Library/ScriptAssemblies/Unity.VisualScripting.Flow.Editor.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_Update_at_08_04_2024_23_32_[Changes]/Unity.VisualScripting.Flow.Editor.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/ArtifactDB-lock" />
+    <option name="AFTER_PATH" value="Library/ArtifactDB-lock" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_Update_at_08_04_2024_23_32_[Changes]/ArtifactDB-lock" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/ScriptAssemblies/Unity.VisualScripting.State.Editor.dll" />
+    <option name="AFTER_PATH" value="Library/ScriptAssemblies/Unity.VisualScripting.State.Editor.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_Update_at_08_04_2024_23_32_[Changes]/Unity.VisualScripting.State.Editor.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Bee/tundra.digestcache" />
+    <option name="AFTER_PATH" value="Library/Bee/tundra.digestcache" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_Update_at_08_04_2024_23_32_[Changes]/tundra.digestcache" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/ScriptAssemblies/Unity.VisualScripting.State.dll" />
+    <option name="AFTER_PATH" value="Library/ScriptAssemblies/Unity.VisualScripting.State.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_Update_at_08_04_2024_23_32_[Changes]/Unity.VisualScripting.State.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll" />
+    <option name="AFTER_PATH" value="Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_Update_at_08_04_2024_23_32_[Changes]/Unity.PlasticSCM.Editor.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/SourceAssetDB" />
+    <option name="AFTER_PATH" value="Library/SourceAssetDB" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_Update_at_08_04_2024_23_32_[Changes]/SourceAssetDB" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll" />
+    <option name="AFTER_PATH" value="Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_Update_at_08_04_2024_23_32_[Changes]/Unity.TextMeshPro.Editor.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/ScriptAssemblies/Unity.Settings.Editor.dll" />
+    <option name="AFTER_PATH" value="Library/ScriptAssemblies/Unity.Settings.Editor.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_Update_at_08_04_2024_23_32_[Changes]/Unity.Settings.Editor.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Search/transactions.db" />
+    <option name="AFTER_PATH" value="Library/Search/transactions.db" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_Update_at_08_04_2024_23_32_[Changes]/transactions.db" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/ScriptAssemblies/UnityEngine.TestRunner.dll" />
+    <option name="AFTER_PATH" value="Library/ScriptAssemblies/UnityEngine.TestRunner.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_Update_at_08_04_2024_23_32_[Changes]/UnityEngine.TestRunner.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/ScriptAssemblies/Unity.VSCode.Editor.dll" />
+    <option name="AFTER_PATH" value="Library/ScriptAssemblies/Unity.VSCode.Editor.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_Update_at_08_04_2024_23_32_[Changes]/Unity.VSCode.Editor.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/ScriptAssemblies/Unity.Timeline.Editor.dll" />
+    <option name="AFTER_PATH" value="Library/ScriptAssemblies/Unity.Timeline.Editor.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_Update_at_08_04_2024_23_32_[Changes]/Unity.Timeline.Editor.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/ScriptAssemblies/Unity.Timeline.dll" />
+    <option name="AFTER_PATH" value="Library/ScriptAssemblies/Unity.Timeline.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_Update_at_08_04_2024_23_32_[Changes]/Unity.Timeline.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/ScriptAssemblies/Unity.EditorCoroutines.Editor.dll" />
+    <option name="AFTER_PATH" value="Library/ScriptAssemblies/Unity.EditorCoroutines.Editor.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_Update_at_08_04_2024_23_32_[Changes]/Unity.EditorCoroutines.Editor.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Temp/__Backupscenes/0.backup" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll" />
+    <option name="AFTER_PATH" value="Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_Update_at_08_04_2024_23_32_[Changes]/Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/ScriptAssemblies/Unity.VisualScripting.Core.Editor.dll" />
+    <option name="AFTER_PATH" value="Library/ScriptAssemblies/Unity.VisualScripting.Core.Editor.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_Update_at_08_04_2024_23_32_[Changes]/Unity.VisualScripting.Core.Editor.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/expandedItems" />
+    <option name="AFTER_PATH" value="Library/expandedItems" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_Update_at_08_04_2024_23_32_[Changes]/expandedItems" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/SourceAssetDB-lock" />
+    <option name="AFTER_PATH" value="Library/SourceAssetDB-lock" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_Update_at_08_04_2024_23_32_[Changes]/SourceAssetDB-lock" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.dll" />
+    <option name="AFTER_PATH" value="Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_Update_at_08_04_2024_23_32_[Changes]/Unity.TestTools.CodeCoverage.Editor.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/ScriptAssemblies/Unity.VisualScripting.Flow.dll" />
+    <option name="AFTER_PATH" value="Library/ScriptAssemblies/Unity.VisualScripting.Flow.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_Update_at_08_04_2024_23_32_[Changes]/Unity.VisualScripting.Flow.dll" />
+  </binary>
+</changelist>

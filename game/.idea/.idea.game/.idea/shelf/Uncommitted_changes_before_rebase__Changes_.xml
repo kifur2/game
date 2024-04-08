@@ -1,0 +1,29 @@
+<changelist name="Uncommitted_changes_before_rebase_[Changes]" date="1712613174452" recycled="false" toDelete="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before rebase [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" value="Library/ArtifactDB" />
+    <option name="AFTER_PATH" value="Library/ArtifactDB" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/ArtifactDB" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/ArtifactDB-lock" />
+    <option name="AFTER_PATH" value="Library/ArtifactDB-lock" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/ArtifactDB-lock" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/SourceAssetDB" />
+    <option name="AFTER_PATH" value="Library/SourceAssetDB" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/SourceAssetDB" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/Search/transactions.db" />
+    <option name="AFTER_PATH" value="Library/Search/transactions.db" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/transactions.db" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/SourceAssetDB-lock" />
+    <option name="AFTER_PATH" value="Library/SourceAssetDB-lock" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.game/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/SourceAssetDB-lock" />
+  </binary>
+</changelist>
