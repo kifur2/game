@@ -919,6 +919,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 813817757}
   m_CullTransparentMesh: 1
+--- !u!20 &916312488 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 4507235284414500614, guid: 477645481cdae6d4dad5d76a6bf358c0, type: 3}
+  m_PrefabInstance: {fileID: 946493341}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &933513316
 GameObject:
   m_ObjectHideFlags: 0
@@ -1077,6 +1082,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 477645481cdae6d4dad5d76a6bf358c0, type: 3}
+--- !u!198 &963507706 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 1377609528, guid: 477645481cdae6d4dad5d76a6bf358c0, type: 3}
+  m_PrefabInstance: {fileID: 946493341}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1148338550
 GameObject:
   m_ObjectHideFlags: 0
@@ -1190,6 +1200,27 @@ MonoBehaviour:
   health: 50
   pickups: []
   parentObjects: []
+--- !u!1 &1556832064 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1294672531391019, guid: 477645481cdae6d4dad5d76a6bf358c0, type: 3}
+  m_PrefabInstance: {fileID: 946493341}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1556832066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1556832064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 674b759a0cc2f498699401890727dbf8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+  range: 100
+  fpsCam: {fileID: 916312488}
+  muzzleFlash: {fileID: 963507706}
 --- !u!1 &2025364523
 GameObject:
   m_ObjectHideFlags: 0
