@@ -15,8 +15,10 @@ public class Target : MonoBehaviour
 
     void Die() {
         Destroy(gameObject);
-        int index = Random.Range(0, pickups.Length);
-        Vector3 pickupPosition = new Vector3(transform.position.x, transform.position.y + 1f, transform.position.z);
-        Instantiate(pickups[index], pickupPosition, Quaternion.identity, parentObjects[index]);
+        if(pickups.Length > 0) { 
+			int index = Random.Range(0, pickups.Length);
+			Vector3 pickupPosition = new Vector3(transform.position.x, transform.position.y + 1f, transform.position.z);
+			Instantiate(pickups[index], pickupPosition, Quaternion.identity, parentObjects[index]);
+	    }
     }
 }

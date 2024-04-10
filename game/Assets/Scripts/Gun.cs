@@ -1,24 +1,33 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Gun : MonoBehaviour
 {
     public float damage = 10f;
     public float range = 100f;
+    public int ammo;
+    public int totalAmmo; 
 
     public Camera fpsCam;
-    public ParticleSystem muzzleFlash;   
+    public ParticleSystem muzzleFlash;
+
+
+    public Text ammoDisplay;
 
 
     private void Update()
     {
-        if (Input.GetButtonDown("Fire1")) {
+        ammoDisplay.text = ammo.ToString() + " | " + totalAmmo.ToString();
+
+        if (Input.GetButtonDown("Fire1") && ammo > 0) {
             Shoot();
 	    }
     }
 
     void Shoot() {
-     	muzzleFlash.Play();
         RaycastHit hit;
+     	muzzleFlash.Play();
+        ammo--;
   
 	    if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range) ) {
             Debug.Log(hit.transform.name);
