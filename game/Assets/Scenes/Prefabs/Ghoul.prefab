@@ -1187,6 +1187,7 @@ MonoBehaviour:
   - {fileID: 8060150859182244066, guid: 60b0448bde272bc4588bb9aa7f3f22f0, type: 3}
   parentObjects:
   - {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!195 &5612231467730166405
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -1222,7 +1223,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  followDistance: 10
+  followDistance: 20
   attackDistance: 2
 --- !u!1 &5613190544179144027
 GameObject:
