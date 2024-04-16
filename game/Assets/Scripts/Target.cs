@@ -6,6 +6,16 @@ public class Target : MonoBehaviour
     public GameObject[] pickups;
     public Transform[] parentObjects;
 
+    public MonsterSpawner spawner;
+
+    void Start()
+    {
+	    if ((parentObjects == null || parentObjects.Length == 0) && (pickups != null && pickups.Length > 0))
+	    {
+		    parentObjects = new Transform[pickups.Length];
+	    }
+    }
+
     public void TakeDamage(float amount) {
         health -= amount;
         if(health <= 0f) {
@@ -13,7 +23,9 @@ public class Target : MonoBehaviour
 	    }
     }
 
-    void Die() {
+    void Die()
+    {
+	    spawner.spawnedMonsters.Remove(this.gameObject);
         Destroy(gameObject);
         if(pickups.Length > 0) { 
 			int index = Random.Range(0, pickups.Length);

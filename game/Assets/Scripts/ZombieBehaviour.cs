@@ -6,7 +6,7 @@ using UnityEngine.AI;
 public class ZombieBehaviour : MonoBehaviour
 {
     public Transform player;
-    public float followDistance = 10f;
+    public float followDistance = 20f;
     public float attackDistance = 2f;
     private NavMeshAgent agent;
     private Animation _animation;

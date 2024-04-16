@@ -152,6 +152,34 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "Debug",
+            "id": "1ad3660f-c558-4f52-89fd-9fd50985e820",
+            "actions": [
+                {
+                    "name": "ToggleDebugCamera",
+                    "type": "Button",
+                    "id": "a5afad9b-ee96-4692-9538-98ac15fd31e9",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "9eb64421-8aee-4c66-aef8-c99288a56d45",
+                    "path": "<Keyboard>/f1",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ToggleDebugCamera",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": []

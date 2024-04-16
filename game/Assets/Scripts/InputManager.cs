@@ -6,7 +6,10 @@ using UnityEngine.InputSystem;
 public class InputManager : MonoBehaviour
 {
     private PlayerInput playerInput;
-    private PlayerInput.OnFootActions onFootActions;
+    private PlayerInput.OnFootActions onFootActions;    
+    private PlayerInput.DebugActions debugActions;
+    public DebugCameraController debugCameraController;
+    
     private PlayerMotor motor;
     private PlayerLook look;
     
@@ -14,6 +17,7 @@ public class InputManager : MonoBehaviour
     {
         playerInput = new PlayerInput();
         onFootActions = playerInput.OnFoot;
+        debugActions = playerInput.Debug;
         
         motor = GetComponent<PlayerMotor>();
         look = GetComponent<PlayerLook>();
@@ -21,6 +25,14 @@ public class InputManager : MonoBehaviour
         onFootActions.Jump.performed += ctx => motor.Jump();
         onFootActions.Crouch.performed += ctx => motor.Crouch();
         onFootActions.Sprint.performed += ctx => motor.Sprint();
+        debugActions.ToggleDebugCamera.performed += ctx => ToggleDebugCamera();
+    }
+    private void ToggleDebugCamera()
+    {
+        if (debugCameraController != null)
+        {
+            debugCameraController.ToggleCamera();
+        }
     }
 
     // Update is called once per frame
@@ -39,10 +51,12 @@ public class InputManager : MonoBehaviour
     private void OnEnable()
     {
         onFootActions.Enable();
+        debugActions.Enable();
     }
     
     private void OnDisable()
     {
         onFootActions.Disable();
+        debugActions.Disable();
     }
 }

@@ -174,6 +174,34 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": false
                 }
             ]
+        },
+        {
+            ""name"": ""Debug"",
+            ""id"": ""1ad3660f-c558-4f52-89fd-9fd50985e820"",
+            ""actions"": [
+                {
+                    ""name"": ""ToggleDebugCamera"",
+                    ""type"": ""Button"",
+                    ""id"": ""a5afad9b-ee96-4692-9538-98ac15fd31e9"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""9eb64421-8aee-4c66-aef8-c99288a56d45"",
+                    ""path"": ""<Keyboard>/f1"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""ToggleDebugCamera"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
         }
     ],
     ""controlSchemes"": []
@@ -185,6 +213,9 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
         m_OnFoot_Look = m_OnFoot.FindAction("Look", throwIfNotFound: true);
         m_OnFoot_Crouch = m_OnFoot.FindAction("Crouch", throwIfNotFound: true);
         m_OnFoot_Sprint = m_OnFoot.FindAction("Sprint", throwIfNotFound: true);
+        // Debug
+        m_Debug = asset.FindActionMap("Debug", throwIfNotFound: true);
+        m_Debug_ToggleDebugCamera = m_Debug.FindAction("ToggleDebugCamera", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -320,6 +351,52 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
         }
     }
     public OnFootActions @OnFoot => new OnFootActions(this);
+
+    // Debug
+    private readonly InputActionMap m_Debug;
+    private List<IDebugActions> m_DebugActionsCallbackInterfaces = new List<IDebugActions>();
+    private readonly InputAction m_Debug_ToggleDebugCamera;
+    public struct DebugActions
+    {
+        private @PlayerInput m_Wrapper;
+        public DebugActions(@PlayerInput wrapper) { m_Wrapper = wrapper; }
+        public InputAction @ToggleDebugCamera => m_Wrapper.m_Debug_ToggleDebugCamera;
+        public InputActionMap Get() { return m_Wrapper.m_Debug; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(DebugActions set) { return set.Get(); }
+        public void AddCallbacks(IDebugActions instance)
+        {
+            if (instance == null || m_Wrapper.m_DebugActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_DebugActionsCallbackInterfaces.Add(instance);
+            @ToggleDebugCamera.started += instance.OnToggleDebugCamera;
+            @ToggleDebugCamera.performed += instance.OnToggleDebugCamera;
+            @ToggleDebugCamera.canceled += instance.OnToggleDebugCamera;
+        }
+
+        private void UnregisterCallbacks(IDebugActions instance)
+        {
+            @ToggleDebugCamera.started -= instance.OnToggleDebugCamera;
+            @ToggleDebugCamera.performed -= instance.OnToggleDebugCamera;
+            @ToggleDebugCamera.canceled -= instance.OnToggleDebugCamera;
+        }
+
+        public void RemoveCallbacks(IDebugActions instance)
+        {
+            if (m_Wrapper.m_DebugActionsCallbackInterfaces.Remove(instance))
+                UnregisterCallbacks(instance);
+        }
+
+        public void SetCallbacks(IDebugActions instance)
+        {
+            foreach (var item in m_Wrapper.m_DebugActionsCallbackInterfaces)
+                UnregisterCallbacks(item);
+            m_Wrapper.m_DebugActionsCallbackInterfaces.Clear();
+            AddCallbacks(instance);
+        }
+    }
+    public DebugActions @Debug => new DebugActions(this);
     public interface IOnFootActions
     {
         void OnMovement(InputAction.CallbackContext context);
@@ -327,5 +404,9 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
         void OnLook(InputAction.CallbackContext context);
         void OnCrouch(InputAction.CallbackContext context);
         void OnSprint(InputAction.CallbackContext context);
+    }
+    public interface IDebugActions
+    {
+        void OnToggleDebugCamera(InputAction.CallbackContext context);
     }
 }
