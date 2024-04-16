@@ -48,3 +48,21 @@ Update Mode: updateDependencies
 
 The following packages were updated:
   com.unity.visualscripting from version 1.9.1 to 1.9.2
+
+=== Tue Apr 16 16:28:01 2024
+
+Packages were changed.
+Update Mode: updateDependencies
+
+The following packages were updated:
+  com.unity.inputsystem from version 1.4.4 to 1.7.0
+  com.unity.render-pipelines.universal from version 12.1.6 to 12.1.14
+
+=== Tue Apr 16 16:28:01 2024
+
+Packages were changed.
+Update Mode: mergeDefaultDependencies
+
+The following packages were added:
+  com.unity.cinemachine@2.8.9
+  com.unity.render-pipelines.universal@12.1.14

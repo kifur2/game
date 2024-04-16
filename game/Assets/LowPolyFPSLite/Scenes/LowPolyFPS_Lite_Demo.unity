@@ -1478,7 +1478,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 25
   range: 100
-  ammo: 30
+  fireRate: 5
+  ammo: 1000
   totalAmmo: 150
   fpsCam: {fileID: 1302141431}
   muzzleFlash: {fileID: 995373106}
@@ -2915,7 +2916,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 100
-  currentHealth: 0
+  currentHealth: 100
   healthBar: {fileID: 1869180505}
 --- !u!4 &990098117 stripped
 Transform:
@@ -3758,6 +3759,107 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3507529684465261469, guid: c5c251c4f6ea3694285b311cea75f2a2, type: 3}
   m_PrefabInstance: {fileID: 1217002153}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1262678542
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1262678546}
+  - component: {fileID: 1262678545}
+  - component: {fileID: 1262678544}
+  - component: {fileID: 1262678543}
+  m_Layer: 0
+  m_Name: DebugCamera
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1262678543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1262678542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67146ca2112dd7a4f812a2d875469893, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCamera: {fileID: 1302141431}
+  movementSpeed: 10
+  fastMovementSpeed: 100
+  sensitivity: 0.25
+--- !u!81 &1262678544
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1262678542}
+  m_Enabled: 1
+--- !u!20 &1262678545
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1262678542}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_FocalLength: 50
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 1
+  orthographic size: 10
+  m_Depth: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!4 &1262678546
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1262678542}
+  m_LocalRotation: {x: 0.5, y: -0.5, z: 0.5, w: 0.5}
+  m_LocalPosition: {x: 0, y: 20, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 90}
 --- !u!1001 &1293158909
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4175,6 +4277,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -50
       objectReference: {fileID: 0}
+    - target: {fileID: 1208534414575996087, guid: 27810ba06b62b4d10a4103c69933a0d9, type: 3}
+      propertyPath: m_Value
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3190952921550365821, guid: 27810ba06b62b4d10a4103c69933a0d9, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -4409,7 +4515,7 @@ PrefabInstance:
     - target: {fileID: 895007995493395924, guid: 477645481cdae6d4dad5d76a6bf358c0, type: 3}
       propertyPath: debugCameraController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1262678543}
     - target: {fileID: 1165240527753281639, guid: 477645481cdae6d4dad5d76a6bf358c0, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.02
@@ -5054,7 +5160,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 10
-  range: 100
+  range: 75
+  fireRate: 15
   ammo: 30
   totalAmmo: 90
   fpsCam: {fileID: 1302141431}
@@ -5528,7 +5635,17 @@ MonoBehaviour:
     - {fileID: 5613174193057508031, guid: 303f9cd2a9418b945826e1f1f8230fae, type: 3}
     - {fileID: 5613174193057508031, guid: 303f9cd2a9418b945826e1f1f8230fae, type: 3}
     - {fileID: 5613174193057508031, guid: 303f9cd2a9418b945826e1f1f8230fae, type: 3}
-  - monsterSpawn: []
+  - monsterSpawn:
+    - {fileID: 5613174193057508031, guid: 303f9cd2a9418b945826e1f1f8230fae, type: 3}
+    - {fileID: 5613174193057508031, guid: 303f9cd2a9418b945826e1f1f8230fae, type: 3}
+    - {fileID: 5613174193057508031, guid: 303f9cd2a9418b945826e1f1f8230fae, type: 3}
+    - {fileID: 5613174193057508031, guid: 303f9cd2a9418b945826e1f1f8230fae, type: 3}
+    - {fileID: 5613174193057508031, guid: 303f9cd2a9418b945826e1f1f8230fae, type: 3}
+    - {fileID: 5613174193057508031, guid: 303f9cd2a9418b945826e1f1f8230fae, type: 3}
+    - {fileID: 5613174193057508031, guid: 303f9cd2a9418b945826e1f1f8230fae, type: 3}
+    - {fileID: 5613174193057508031, guid: 303f9cd2a9418b945826e1f1f8230fae, type: 3}
+    - {fileID: 5613174193057508031, guid: 303f9cd2a9418b945826e1f1f8230fae, type: 3}
+    - {fileID: 5613174193057508031, guid: 303f9cd2a9418b945826e1f1f8230fae, type: 3}
   - monsterSpawn: []
   enemiesParentObject: {fileID: 2013268440}
   diamondsParentObject: {fileID: 1014629765}
@@ -5569,7 +5686,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 5
-  range: 100
+  range: 50
+  fireRate: 5
   ammo: 30
   totalAmmo: 150
   fpsCam: {fileID: 1302141431}
