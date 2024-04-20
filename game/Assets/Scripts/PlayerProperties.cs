@@ -10,7 +10,8 @@ public class PlayerProperties : MonoBehaviour
     public int currentHealth;
     public int Diamonds { get; private set; }
 
-    [FormerlySerializedAs("OnDiamondCollected")] public UnityEvent<PlayerProperties> onDiamondCollected;
+    [FormerlySerializedAs("OnDiamondCollected")]
+    public UnityEvent<PlayerProperties> onDiamondCollected;
 
     public HealthBar healthBar;
 
@@ -22,13 +23,16 @@ public class PlayerProperties : MonoBehaviour
 
     private void Update()
     {
-        //actions when we take damage
     }
 
-    void TakeDamage(int damage)
+    public void TakeDamage(int damage)
     {
         currentHealth -= damage;
         healthBar.SetHealth(currentHealth);
+        if (currentHealth <= 0)
+        {
+            Debug.Log("YOU DEAD!");
+        }
     }
 
     public void AddDiamond()
