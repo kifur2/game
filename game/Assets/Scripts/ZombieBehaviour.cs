@@ -8,31 +8,41 @@ public class ZombieBehaviour : MonoBehaviour
     public Transform player;
     public float followDistance = 20f;
     public float attackDistance = 2f;
-    private NavMeshAgent agent;
+    private NavMeshAgent _agent;
     private Animation _animation;
-    
-    void Start() {
-        agent = GetComponent<NavMeshAgent>();
+    private bool _isAttacking;
+
+    void Start()
+    {
+        _agent = GetComponent<NavMeshAgent>();
         _animation = GetComponent<Animation>();
     }
-    
-    void Update() {
-        float distance = Vector3.Distance(transform.position, player.position);
+
+    void Update()
+    {
+        var distance = Vector3.Distance(transform.position, player.position);
         if (distance <= followDistance)
         {
-            agent.SetDestination(player.position);
+            _agent.SetDestination(player.position);
         }
 
-        if (distance <= attackDistance)
+        if (distance <= attackDistance && !_isAttacking)
         {
-            agent.isStopped = true;
-            _animation.Play("Attack1");
+            _agent.isStopped = true;
+            StartCoroutine(AttackCoroutine());
         }
-        else
+        else if (!_isAttacking)
         {
-            agent.isStopped = false;
+            _agent.isStopped = false;
             _animation.Play("Walk");
         }
     }
 
+    IEnumerator AttackCoroutine()
+    {
+        _isAttacking = true;
+        _animation.Play("Attack1");
+        yield return new WaitForSeconds(_animation["Attack1"].length);
+        _isAttacking = false;
+    }
 }

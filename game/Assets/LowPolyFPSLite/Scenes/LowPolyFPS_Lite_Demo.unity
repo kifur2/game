@@ -5924,6 +5924,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5722273096215216480, guid: 333567aa41d18cd488bdffbb5facfb7a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.6
+      objectReference: {fileID: 0}
     - target: {fileID: 5722273096386374795, guid: 333567aa41d18cd488bdffbb5facfb7a, type: 3}
       propertyPath: ammoDisplay
       value: 
@@ -5932,6 +5936,18 @@ PrefabInstance:
       propertyPath: ammoDisplay
       value: 
       objectReference: {fileID: 2084138744}
+    - target: {fileID: 5722273097447575154, guid: 333567aa41d18cd488bdffbb5facfb7a, type: 3}
+      propertyPath: walkSpeed
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5722273097447575154, guid: 333567aa41d18cd488bdffbb5facfb7a, type: 3}
+      propertyPath: jumpHeight
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5722273097447575154, guid: 333567aa41d18cd488bdffbb5facfb7a, type: 3}
+      propertyPath: sprintSpeed
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 5722273097447575155, guid: 333567aa41d18cd488bdffbb5facfb7a, type: 3}
       propertyPath: debugCameraController
       value: 
