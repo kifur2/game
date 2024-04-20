@@ -46,6 +46,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd6605415b903b94bbf7cd47d3929203, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timedEffectDuration: 0
+  selectedType: 0
 --- !u!65 &4783896957920390342
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -126,6 +128,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 23000012220716874, guid: c3c0707254334a64ca8198f7486e977d, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d3fdd53a2b5dd904fad8d824266a4cad, type: 2}
     - target: {fileID: 114000012797500034, guid: c3c0707254334a64ca8198f7486e977d, type: 3}
       propertyPath: isScaling
       value: 0

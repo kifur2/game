@@ -13,7 +13,7 @@ public class MonsterSpawner : MonoBehaviour
 
     [SerializeField] private WaveContent[] waves;
     [SerializeField] private Transform enemiesParentObject;
-    [SerializeField] private Transform diamondsParentObject;
+    [SerializeField] private Transform pickupsParentObject;
     [SerializeField] private Transform player;
 
     public List<GameObject> spawnedMonsters;
@@ -45,7 +45,7 @@ public class MonsterSpawner : MonoBehaviour
             {
                 GameObject m = Instantiate(monster, FindSpawnLocation(), Quaternion.identity, enemiesParentObject);
                 m.GetComponent<EnemyBehaviour>().playerTransform = player;
-                m.GetComponent<Target>().parentObjects[0] = diamondsParentObject;
+                m.GetComponent<Target>().parentObject = pickupsParentObject;
                 m.GetComponent<Target>().spawner = this;
                 spawnedMonsters.Add(m);
             }
