@@ -4,15 +4,15 @@ using UnityEngine;
 using TMPro;
 public class InventoryUI : MonoBehaviour
 {
-    private TextMeshProUGUI diamondText;
+    private TextMeshProUGUI _diamondText;
     
     void Start()
     {
-        diamondText = GetComponent<TextMeshProUGUI>();
+        _diamondText = GetComponent<TextMeshProUGUI>();
     }
     
-    public void UpdateDiamonds(PlayerInventory playerInventory)
+    public void UpdateDiamonds(PlayerProperties playerProperties)
     {
-        diamondText.text = playerInventory.diamonds.ToString();
+        _diamondText.text = playerProperties.Diamonds.ToString();
     }
 }

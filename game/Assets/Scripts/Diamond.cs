@@ -6,11 +6,9 @@ public class Diamond : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-        PlayerInventory playerInventory = other.GetComponent<PlayerInventory>();
-        if (playerInventory!= null && other.CompareTag("Player"))
-        {
-            playerInventory.AddDiamond();
-            Destroy(gameObject);
-        }
+        var playerProperties = other.GetComponent<PlayerProperties>();
+        if (playerProperties == null || !other.CompareTag("Player")) return;
+        playerProperties.AddDiamond();
+        Destroy(gameObject);
     }
 }
