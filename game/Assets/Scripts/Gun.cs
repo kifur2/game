@@ -14,29 +14,25 @@ public class Gun : MonoBehaviour
 
     public Text ammoDisplay;
 
-    private float nextTimeToFire = 0f;   
+    private float _nextTimeToFire = 0f;   
 
     private void Update()
     {
         ammoDisplay.text = ammo.ToString() + " | " + totalAmmo.ToString();
-        if (Input.GetButton("Fire1") && ammo > 0 && Time.time >= nextTimeToFire) {
-            nextTimeToFire = Time.time + 1f / fireRate;
-            Shoot();
-	    }
+        if (!Input.GetButton("Fire1") || ammo <= 0 || !(Time.time >= _nextTimeToFire)) return;
+        _nextTimeToFire = Time.time + 1f / fireRate;
+        Shoot();
     }
 
-    void Shoot() {
+    private void Shoot() {
         RaycastHit hit;
      	muzzleFlash.Play();
         ammo--;
-  
-	    if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range) ) {
-            // Debug.Log(hit.transform.name);
 
-            Target target = hit.transform.GetComponent<Target>();
-            if(target != null) {
-                target.TakeDamage(damage);
-	        }
-	    }
+        if (!Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range)) return;
+        var target = hit.transform.GetComponent<Target>();
+        if(target != null) {
+            target.TakeDamage(damage);
+        }
     }
 }

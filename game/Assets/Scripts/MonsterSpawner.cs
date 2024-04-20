@@ -17,7 +17,7 @@ public class MonsterSpawner : MonoBehaviour
     [SerializeField] private Transform player;
 
     public List<GameObject> spawnedMonsters;
-    private int currentWave = 0;
+    private int _currentWave;
     [SerializeField]
     private float spawnRangeX = 10;
     [SerializeField]
@@ -33,18 +33,18 @@ public class MonsterSpawner : MonoBehaviour
     {
         if (spawnedMonsters.Count == 0)
         {
-            currentWave++;
+            _currentWave++;
             SpawnWave();
         }
     }
     void SpawnWave()
     {
-        if (waves != null && waves.Length > currentWave)
+        if (waves != null && waves.Length > _currentWave)
         {
-            foreach (var monster in waves[currentWave].MonsterSpawn)
+            foreach (var monster in waves[_currentWave].MonsterSpawn)
             {
                 GameObject m = Instantiate(monster, FindSpawnLocation(), Quaternion.identity, enemiesParentObject);
-                m.GetComponent<ZombieBehaviour>().player = player;
+                m.GetComponent<EnemyBehaviour>().playerTransform = player;
                 m.GetComponent<Target>().parentObjects[0] = diamondsParentObject;
                 m.GetComponent<Target>().spawner = this;
                 spawnedMonsters.Add(m);
