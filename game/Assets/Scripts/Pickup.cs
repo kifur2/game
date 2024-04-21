@@ -9,7 +9,7 @@ public class Pickup : MonoBehaviour
         Heart,
         Shield,
         Sword,
-        Cartridge
+        Bow
     }
 
     [SerializeField] private float timedEffectDuration = 0;
@@ -17,8 +17,13 @@ public class Pickup : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        if (!other.CompareTag("Player")) return;
+        
         var playerProperties = other.GetComponent<PlayerProperties>();
-        if (playerProperties == null || !other.CompareTag("Player")) return;
+        if (playerProperties == null) return;
+        
+        var uiIconsQueue = FindObjectOfType<UIIconsQueue>();
+        
         switch (selectedType)
         {
             case Type.Diamond:
@@ -29,15 +34,19 @@ public class Pickup : MonoBehaviour
                 break;
             case Type.Shield:
                 StartCoroutine(playerProperties.InvincibilityEffect(timedEffectDuration));
+                uiIconsQueue.AddIcon(selectedType, timedEffectDuration);
                 break;
             case Type.Sword:
                 StartCoroutine(playerProperties.SuperDamageEffect(timedEffectDuration));
+                uiIconsQueue.AddIcon(selectedType, timedEffectDuration);
                 break;
-            case Type.Cartridge:
+            case Type.Bow:
                 StartCoroutine(playerProperties.SuperFireRateEffect(timedEffectDuration));
+                uiIconsQueue.AddIcon(selectedType, timedEffectDuration);
                 break;
             default:
-                throw new ArgumentOutOfRangeException();
+                Debug.LogWarning("Unhandled pickup type: " + selectedType);
+                break;
         }
 
         Destroy(gameObject);
