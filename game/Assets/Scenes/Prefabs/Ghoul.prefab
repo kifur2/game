@@ -1281,6 +1281,7 @@ MonoBehaviour:
   - {fileID: 6461773389058181870, guid: 26441bceba9f35241a02bd3c7eb97467, type: 3}
   - {fileID: 4335713011287039589, guid: 30b59435b5f52e64fafe7a801a2f5fd8, type: 3}
   - {fileID: 1198149594241458633, guid: 100e16fcdb8f51b4ebbea31ab7f62d2f, type: 3}
+  - {fileID: 1000010921973622, guid: af16961524284e54491133548920258b, type: 3}
   parentObject: {fileID: 0}
   spawner: {fileID: 0}
 --- !u!195 &5612231467730166405

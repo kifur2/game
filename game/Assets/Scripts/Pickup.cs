@@ -9,7 +9,8 @@ public class Pickup : MonoBehaviour
         Heart,
         Shield,
         Sword,
-        Bow
+        Bow, 
+        Ammo
     }
 
     [SerializeField] private float timedEffectDuration = 0;
@@ -43,6 +44,9 @@ public class Pickup : MonoBehaviour
             case Type.Bow:
                 StartCoroutine(playerProperties.SuperFireRateEffect(timedEffectDuration));
                 uiIconsQueue.AddIcon(selectedType, timedEffectDuration);
+                break;
+            case Type.Ammo:
+                playerProperties.PickUpAmmo(30);
                 break;
             default:
                 Debug.LogWarning("Unhandled pickup type: " + selectedType);
