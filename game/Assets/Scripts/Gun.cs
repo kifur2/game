@@ -42,7 +42,6 @@ public class Gun : MonoBehaviour
         if(totalAmmo > 0) {
             _isReloading = true;
 			yield return new WaitForSeconds(reloadTime);
-            Debug.Log("Reload\n");
             if( totalAmmo >= maxAmmo ) { 
 				totalAmmo -= (maxAmmo - ammo); 
 				ammo = maxAmmo;
