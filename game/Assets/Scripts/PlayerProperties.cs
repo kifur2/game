@@ -47,6 +47,12 @@ public class PlayerProperties : MonoBehaviour
         onDiamondCollected.Invoke(this);
     }
 
+    public void PickUpAmmo(int ammoNo)
+    {
+        var gun = GetComponentInChildren<Gun>();
+        gun.totalAmmo += ammoNo;
+    }
+
     public IEnumerator InvincibilityEffect(float duration)
     {
         _isInvincible = true;
@@ -69,4 +75,6 @@ public class PlayerProperties : MonoBehaviour
         yield return new WaitForSeconds(duration);
         gun.fireRate /= 5;
     }
-}
+
+    
+} 
