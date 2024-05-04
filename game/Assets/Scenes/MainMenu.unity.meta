@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:game/Assets/Scenes/MainMenu.unity.meta
 guid: c6b55b33b24b51244baeaafb88f03dfe
+========
+guid: 3e115d39342cb7a448b3225745c4eee1
+>>>>>>>> main:game/Assets/OutSourcedPackages/LowPolyRPGWeapons_Lite/LowPolyRPGWeaponsLite_2020.3.0_URP_v1.0.unitypackage.meta
 DefaultImporter:
   externalObjects: {}
   userData: 
