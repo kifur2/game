@@ -3972,6 +3972,8 @@ MonoBehaviour:
   damage: 10
   range: 75
   fireRate: 15
+  reloadTime: 2
+  maxAmmo: 30
   ammo: 30
   totalAmmo: 90
   fpsCam: {fileID: 5722273096215216485}
@@ -4319,6 +4321,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5722273097517738931}
   - component: {fileID: 5722273097517738928}
+  - component: {fileID: 1788041025}
   m_Layer: 0
   m_Name: WeaponHolder
   m_TagString: Untagged
@@ -4357,6 +4360,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectedWeapon: 0
+--- !u!95 &1788041025
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5722273097517738930}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a07bd7a359a094f75be2e9b465ef1681, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &5722273097588451857
 GameObject:
   m_ObjectHideFlags: 0
@@ -6833,9 +6857,41 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5722273097517738931}
     m_Modifications:
+    - target: {fileID: 1164579542254448, guid: 57bf5071e0a1c8947b8918a8f96184a6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1179027331861490, guid: 57bf5071e0a1c8947b8918a8f96184a6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1200624634813402, guid: 57bf5071e0a1c8947b8918a8f96184a6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1374600452982646, guid: 57bf5071e0a1c8947b8918a8f96184a6, type: 3}
       propertyPath: m_Name
       value: Pistol
+      objectReference: {fileID: 0}
+    - target: {fileID: 1429655430221584, guid: 57bf5071e0a1c8947b8918a8f96184a6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1521451204330094, guid: 57bf5071e0a1c8947b8918a8f96184a6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1725747717631072, guid: 57bf5071e0a1c8947b8918a8f96184a6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1822196338761130, guid: 57bf5071e0a1c8947b8918a8f96184a6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1876213024429600, guid: 57bf5071e0a1c8947b8918a8f96184a6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4054100971495624, guid: 57bf5071e0a1c8947b8918a8f96184a6, type: 3}
       propertyPath: m_RootOrder
@@ -6908,6 +6964,8 @@ MonoBehaviour:
   damage: 5
   range: 50
   fireRate: 5
+  reloadTime: 1
+  maxAmmo: 30
   ammo: 30
   totalAmmo: 150
   fpsCam: {fileID: 5722273096215216485}
@@ -6920,13 +6978,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5721821397366468703}
     m_Modifications:
+    - target: {fileID: 3332288768167364456, guid: 0101074912a914ecd8bb0c03ddd90b66, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3332288768167364457, guid: 0101074912a914ecd8bb0c03ddd90b66, type: 3}
       propertyPath: m_BoundingSphereOverride.x
-      value: 3.4326e-41
+      value: 1.05e-43
       objectReference: {fileID: 0}
     - target: {fileID: 3332288768167364457, guid: 0101074912a914ecd8bb0c03ddd90b66, type: 3}
       propertyPath: m_BoundingSphereOverride.y
       value: NaN
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332288768167364457, guid: 0101074912a914ecd8bb0c03ddd90b66, type: 3}
+      propertyPath: m_BoundingSphereOverride.z
+      value: 12.7500515
       objectReference: {fileID: 0}
     - target: {fileID: 3332288768376468117, guid: 0101074912a914ecd8bb0c03ddd90b66, type: 3}
       propertyPath: InitialModule.startSize.scalar
@@ -7068,6 +7134,8 @@ MonoBehaviour:
   damage: 25
   range: 100
   fireRate: 5
+  reloadTime: 3
+  maxAmmo: 30
   ammo: 1000
   totalAmmo: 150
   fpsCam: {fileID: 5722273096215216485}
@@ -7085,6 +7153,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5722273096386374794}
     m_Modifications:
+    - target: {fileID: 3332288768167364456, guid: 0101074912a914ecd8bb0c03ddd90b66, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3332288768167364457, guid: 0101074912a914ecd8bb0c03ddd90b66, type: 3}
       propertyPath: m_BoundingSphereOverride.x
       value: 3.4326e-41
@@ -7160,6 +7232,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5726534395997027922}
     m_Modifications:
+    - target: {fileID: 3332288768167364456, guid: 0101074912a914ecd8bb0c03ddd90b66, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3332288768167364457, guid: 0101074912a914ecd8bb0c03ddd90b66, type: 3}
       propertyPath: m_BoundingSphereOverride.x
       value: 3.4326e-41
