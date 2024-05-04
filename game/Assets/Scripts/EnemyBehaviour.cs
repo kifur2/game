@@ -6,6 +6,7 @@ using UnityEngine.AI;
 public class EnemyBehaviour : MonoBehaviour
 {
     public Transform playerTransform;
+    public Target enemyTarget;
     public float followDistance = 20f;
     public float attackDistance = 2f;
     public int attackDamage = 10;
@@ -25,22 +26,24 @@ public class EnemyBehaviour : MonoBehaviour
 
     void Update()
     {
-        var distance = Vector3.Distance(transform.position, playerTransform.position);
-        if (distance <= followDistance)
-        {
-            _agent.SetDestination(playerTransform.position);
-        }
+        if(enemyTarget.health > 0) { 
+			var distance = Vector3.Distance(transform.position, playerTransform.position);
+			if (distance <= followDistance)
+			{
+			    _agent.SetDestination(playerTransform.position);
+			}
 
-        if (distance <= attackDistance && !_isAttacking)
-        {
-            _agent.isStopped = true;
-            StartCoroutine(AttackCoroutine());
-        }
-        else if (!_isAttacking)
-        {
-            _agent.isStopped = false;
-            _animation.Play("Walk");
-        }
+			if (distance <= attackDistance && !_isAttacking)
+			{
+			    _agent.isStopped = true;
+			    StartCoroutine(AttackCoroutine());
+			}
+			else if (!_isAttacking)
+			{
+			    _agent.isStopped = false;
+			    _animation.Play("Walk");
+			}
+	    }
     }
 
     IEnumerator AttackCoroutine()

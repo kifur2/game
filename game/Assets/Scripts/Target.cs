@@ -1,30 +1,38 @@
 using UnityEngine;
 
+
 public class Target : MonoBehaviour
 {
+    private bool _alive = true;
+
     public float health = 50f;
     public GameObject[] pickups;
     public Transform parentObject;
+    private Animation _animation;
 
     public MonsterSpawner spawner;
 
     void Start()
     {
+        _animation = GetComponent<Animation>();
     }
 
     public void TakeDamage(float amount)
     {
         health -= amount;
-        if (health <= 0f)
+        if (_alive && health <= 0f)
         {
+            _alive = false;
             Die();
         }
     }
 
     void Die()
     {
+
+        _animation.Play("Death");
+        Destroy(gameObject, _animation["Death"].length);
         spawner.spawnedMonsters.Remove(this.gameObject);
-        Destroy(gameObject);
         if (pickups.Length > 0)
         {
             int index = Random.Range(0, pickups.Length);
