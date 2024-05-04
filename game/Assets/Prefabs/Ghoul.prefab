@@ -1319,6 +1319,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerTransform: {fileID: 0}
+  enemyTarget: {fileID: 5612231467730166410}
   followDistance: 20
   attackDistance: 1.5
   attackDamage: 10
