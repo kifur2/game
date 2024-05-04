@@ -21,6 +21,6 @@ public class DebugCameraController : MonoBehaviour
     public void ToggleCamera()
     {
         gameObject.SetActive(!gameObject.activeSelf);
-        mainCamera.enabled = !gameObject.activeSelf;
+        mainCamera.gameObject.SetActive(!gameObject.activeSelf);
     }
 }

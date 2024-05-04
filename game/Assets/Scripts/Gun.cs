@@ -11,7 +11,7 @@ public class Gun : MonoBehaviour
 
     public int maxAmmo;
     public int ammo;
-    public int totalAmmo; 
+    public int totalAmmo;
 
     public Camera fpsCam;
     public ParticleSystem muzzleFlash;
@@ -27,10 +27,11 @@ public class Gun : MonoBehaviour
         if (_isReloading)
             return;
 
-        if(ammo < maxAmmo && Input.GetKeyDown(KeyCode.R)) {
+        if (ammo < maxAmmo && Input.GetKeyDown(KeyCode.R))
+        {
             StartCoroutine(Reload());
             return;
-	    }
+        }
 
         if (!Input.GetButton("Fire1") || ammo <= 0 || !(Time.time >= _nextTimeToFire)) return;
         _nextTimeToFire = Time.time + 1f / fireRate;
@@ -38,32 +39,38 @@ public class Gun : MonoBehaviour
         ammoDisplay.text = ammo.ToString() + " | " + totalAmmo.ToString();
     }
 
-    IEnumerator Reload() {
-        if(totalAmmo > 0) {
-            _isReloading = true;
-			yield return new WaitForSeconds(reloadTime);
-            if( totalAmmo >= maxAmmo ) { 
-				totalAmmo -= (maxAmmo - ammo); 
-				ammo = maxAmmo;
-	        }  else {
-                ammo = totalAmmo;
-                totalAmmo = 0;
-	        }
-            _isReloading = false;
-    	}
+    IEnumerator Reload()
+    {
+        if (PauseManager.IsPaused || totalAmmo <= 0) yield break;
+        _isReloading = true;
+        yield return new WaitForSeconds(reloadTime);
+        if (totalAmmo >= maxAmmo)
+        {
+            totalAmmo -= (maxAmmo - ammo);
+            ammo = maxAmmo;
+        }
+        else
+        {
+            ammo = totalAmmo;
+            totalAmmo = 0;
+        }
+
+        _isReloading = false;
     }
 
-    private void Shoot() {
+    private void Shoot()
+    {
+        if (PauseManager.IsPaused) return;
+
         RaycastHit hit;
-     	muzzleFlash.Play();
+        muzzleFlash.Play();
         ammo--;
 
         if (!Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range)) return;
         var target = hit.transform.GetComponent<Target>();
-        if(target != null) {
+        if (target != null)
+        {
             target.TakeDamage(damage);
         }
     }
-
-
 }
