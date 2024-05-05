@@ -16,6 +16,8 @@ public class Pickup : MonoBehaviour
     [SerializeField] private float timedEffectDuration = 0;
     [SerializeField] private Type selectedType;
 
+    public AudioClip bonusAudioClip;
+
     private void OnTriggerEnter(Collider other)
     {
         if (!other.CompareTag("Player")) return;
@@ -24,7 +26,7 @@ public class Pickup : MonoBehaviour
         if (playerProperties == null) return;
         
         var uiIconsQueue = FindObjectOfType<UIIconsQueue>();
-        
+
         switch (selectedType)
         {
             case Type.Diamond:
@@ -52,7 +54,9 @@ public class Pickup : MonoBehaviour
                 Debug.LogWarning("Unhandled pickup type: " + selectedType);
                 break;
         }
-
+        
+        if(bonusAudioClip != null)
+			AudioSource.PlayClipAtPoint(bonusAudioClip, gameObject.transform.position);
         Destroy(gameObject);
     }
 }

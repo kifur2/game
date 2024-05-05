@@ -46,9 +46,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd6605415b903b94bbf7cd47d3929203, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  uiIconsQueue: {fileID: 3993141551197398837, guid: de6da53c09b8ce34eb49673e1a78f3a9, type: 3}
   timedEffectDuration: 10
   selectedType: 2
+  bonusAudioClip: {fileID: 8300000, guid: 00e4eb96f4f6cc249a632e4027644cad, type: 3}
 --- !u!65 &3639911679796728426
 BoxCollider:
   m_ObjectHideFlags: 0

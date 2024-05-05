@@ -10,6 +10,7 @@ public class PlayerProperties : MonoBehaviour
     private bool _isInvincible;
 
     public UnityEvent<PlayerProperties> onDiamondCollected;
+    public AudioClip deathAudioClip;
 
     public HealthBar healthBar;
 
@@ -31,6 +32,7 @@ public class PlayerProperties : MonoBehaviour
         healthBar.SetHealth(currentHealth);
         if (currentHealth <= 0)
         {
+            AudioSource.PlayClipAtPoint(deathAudioClip, gameObject.transform.position);
             Debug.Log("YOU DEAD!");
         }
     }
@@ -63,17 +65,17 @@ public class PlayerProperties : MonoBehaviour
     public IEnumerator SuperDamageEffect(float duration)
     {
         var gun = GetComponentInChildren<Gun>();
-        gun.damage *= 5;
+        gun.damage *= 2;
         yield return new WaitForSeconds(duration);
-        gun.damage /= 5;
+        gun.damage /= 2;
     }
 
     public IEnumerator SuperFireRateEffect(float duration)
     {
         var gun = GetComponentInChildren<Gun>();
-        gun.fireRate *= 5;
+        gun.fireRate *= 1.5f;
         yield return new WaitForSeconds(duration);
-        gun.fireRate /= 5;
+        gun.fireRate /= 1.5f;
     }
 
     

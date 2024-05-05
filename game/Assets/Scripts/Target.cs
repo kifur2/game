@@ -10,6 +10,9 @@ public class Target : MonoBehaviour
     public Transform parentObject;
     private Animation _animation;
 
+    public AudioSource audioSource;
+    public AudioClip hitEffect;
+
     public MonsterSpawner spawner;
 
     void Start()
@@ -19,12 +22,16 @@ public class Target : MonoBehaviour
 
     public void TakeDamage(float amount)
     {
-        health -= amount;
-        if (_alive && health <= 0f)
-        {
-            _alive = false;
-            Die();
-        }
+        if(_alive) { 
+			health -= amount;
+            audioSource.PlayDelayed(0.4f);
+            audioSource.PlayOneShot(hitEffect);
+			if (health <= 0f)
+			{
+			    _alive = false;
+			    Die();
+			}
+	    }
     }
 
     void Die()

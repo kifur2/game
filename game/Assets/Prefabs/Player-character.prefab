@@ -3979,6 +3979,9 @@ MonoBehaviour:
   fpsCam: {fileID: 5722273096215216485}
   muzzleFlash: {fileID: 7014132027095084696}
   ammoDisplay: {fileID: 0}
+  audioSource: {fileID: 0}
+  shootAudioClip: {fileID: 0}
+  reloadAudioClip: {fileID: 0}
 --- !u!1 &5722273096958812987
 GameObject:
   m_ObjectHideFlags: 0
@@ -4900,6 +4903,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  deathAudioClip: {fileID: 8300000, guid: aa4a216957b3443e09ce781aff29cb9d, type: 3}
   healthBar: {fileID: 0}
 --- !u!114 &5722273097447575157
 MonoBehaviour:
@@ -6971,6 +6975,9 @@ MonoBehaviour:
   fpsCam: {fileID: 5722273096215216485}
   muzzleFlash: {fileID: 7014132028768572783}
   ammoDisplay: {fileID: 0}
+  audioSource: {fileID: 0}
+  shootAudioClip: {fileID: 0}
+  reloadAudioClip: {fileID: 0}
 --- !u!1001 &5722273096193976314
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7141,6 +7148,9 @@ MonoBehaviour:
   fpsCam: {fileID: 5722273096215216485}
   muzzleFlash: {fileID: 7014132027545983966}
   ammoDisplay: {fileID: 0}
+  audioSource: {fileID: 0}
+  shootAudioClip: {fileID: 0}
+  reloadAudioClip: {fileID: 0}
 --- !u!4 &5726534395997027922 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4826450088584990, guid: 119551172e2002344983c075ab97ef79, type: 3}

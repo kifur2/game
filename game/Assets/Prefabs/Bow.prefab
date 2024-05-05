@@ -48,6 +48,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timedEffectDuration: 10
   selectedType: 4
+  bonusAudioClip: {fileID: 8300000, guid: b0e62ed71b1538648b719821f4f63b4c, type: 3}
 --- !u!65 &1198149594241458638
 BoxCollider:
   m_ObjectHideFlags: 0

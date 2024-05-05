@@ -18,6 +18,10 @@ public class Gun : MonoBehaviour
 
     public Text ammoDisplay;
 
+    public AudioSource audioSource;
+    public AudioClip shootAudioClip;
+    public AudioClip reloadAudioClip;
+
     private float _nextTimeToFire = 0f;
     private bool _isReloading = false;
 
@@ -43,6 +47,7 @@ public class Gun : MonoBehaviour
     {
         if (PauseManager.IsPaused || totalAmmo <= 0) yield break;
         _isReloading = true;
+        audioSource.PlayOneShot(reloadAudioClip);
         yield return new WaitForSeconds(reloadTime);
         if (totalAmmo >= maxAmmo)
         {
@@ -65,7 +70,10 @@ public class Gun : MonoBehaviour
         RaycastHit hit;
         muzzleFlash.Play();
         ammo--;
-
+        if(audioSource != null)
+        { 
+			audioSource.PlayOneShot(shootAudioClip);
+	    }
         if (!Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range)) return;
         var target = hit.transform.GetComponent<Target>();
         if (target != null)
