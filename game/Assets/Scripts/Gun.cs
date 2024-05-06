@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using UnityEngine.Serialization;
 
 public class Gun : MonoBehaviour
 {
@@ -23,32 +24,40 @@ public class Gun : MonoBehaviour
     public AudioClip reloadAudioClip;
 
     private float _nextTimeToFire = 0f;
-    private bool _isReloading = false;
+    public static bool IsReloading = false;
+    public static Coroutine ReloadCoroutine;
 
     private void Update()
     {
-        ammoDisplay.text = ammo.ToString() + " | " + totalAmmo.ToString();
-        if (_isReloading)
+        ammoDisplay.text = ammo + " | " + totalAmmo;
+        if (IsReloading)
             return;
 
         if (ammo < maxAmmo && Input.GetKeyDown(KeyCode.R))
         {
-            StartCoroutine(Reload());
+            Reload();
             return;
         }
 
         if (!Input.GetButton("Fire1") || ammo <= 0 || !(Time.time >= _nextTimeToFire)) return;
-        _nextTimeToFire = Time.time + 1f / fireRate;
+        _nextTimeToFire = Time.time + 1f / (fireRate * PlayerProperties.FireRateMultiplier);
         Shoot();
-        ammoDisplay.text = ammo.ToString() + " | " + totalAmmo.ToString();
+        ammoDisplay.text = ammo + " | " + totalAmmo;
     }
 
-    IEnumerator Reload()
+    private void Reload()
     {
-        if (PauseManager.IsPaused || totalAmmo <= 0) yield break;
-        _isReloading = true;
+        if (PauseManager.IsPaused || totalAmmo <= 0) return;
+
+        IsReloading = true;
+        ReloadCoroutine = StartCoroutine(ReloadInternal());
+    }
+
+    private IEnumerator ReloadInternal()
+    {
         audioSource.PlayOneShot(reloadAudioClip);
         yield return new WaitForSeconds(reloadTime);
+
         if (totalAmmo >= maxAmmo)
         {
             totalAmmo -= (maxAmmo - ammo);
@@ -60,25 +69,26 @@ public class Gun : MonoBehaviour
             totalAmmo = 0;
         }
 
-        _isReloading = false;
+        IsReloading = false;
     }
+
 
     private void Shoot()
     {
         if (PauseManager.IsPaused) return;
 
-        RaycastHit hit;
         muzzleFlash.Play();
         ammo--;
-        if(audioSource != null)
-        { 
-			audioSource.PlayOneShot(shootAudioClip);
-	    }
-        if (!Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range)) return;
+        if (audioSource != null)
+        {
+            audioSource.PlayOneShot(shootAudioClip);
+        }
+
+        if (!Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out var hit, range)) return;
         var target = hit.transform.GetComponent<Target>();
         if (target != null)
         {
-            target.TakeDamage(damage);
+            target.TakeDamage(damage * PlayerProperties.DamageMultiplier);
         }
     }
 }
