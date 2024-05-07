@@ -22,29 +22,30 @@ public class Target : MonoBehaviour
 
     public void TakeDamage(float amount)
     {
-        if(_alive) { 
-			health -= amount;
-            audioSource.PlayDelayed(0.4f);
-            audioSource.PlayOneShot(hitEffect);
-			if (health <= 0f)
-			{
-			    _alive = false;
-			    Die();
-			}
-	    }
+        if (!_alive) return;
+        Debug.Log("DamageDone: " + amount);
+        health -= amount;
+        audioSource.PlayDelayed(0.4f);
+        audioSource.PlayOneShot(hitEffect);
+        if (!(health <= 0f)) return;
+        _alive = false;
+        Die();
     }
 
-    void Die()
+    private void Die()
     {
-
         _animation.Play("Death");
-        Destroy(gameObject, _animation["Death"].length);
-        spawner.spawnedMonsters.Remove(this.gameObject);
-        if (pickups.Length > 0)
+        var cl = GetComponent<Collider>();
+        if (cl != null)
         {
-            int index = Random.Range(0, pickups.Length);
-            Vector3 pickupPosition = new Vector3(transform.position.x, transform.position.y + 1f, transform.position.z);
-            Instantiate(pickups[index], pickupPosition, Quaternion.identity, parentObject);
+            Destroy(cl);
         }
+
+        Destroy(gameObject, _animation["Death"].length);
+        spawner.spawnedMonsters.Remove(gameObject);
+        if (pickups.Length <= 0) return;
+        var index = Random.Range(0, pickups.Length);
+        var pickupPosition = new Vector3(transform.position.x, transform.position.y + 1f, transform.position.z);
+        Instantiate(pickups[index], pickupPosition, Quaternion.identity, parentObject);
     }
 }

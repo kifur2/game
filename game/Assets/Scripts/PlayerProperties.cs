@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
@@ -14,14 +15,20 @@ public class PlayerProperties : MonoBehaviour
 
     public HealthBar healthBar;
 
+    public static float DamageMultiplier = 1f;
+    public static float FireRateMultiplier = 1f;
+
+    public enum TemporaryEffect
+    {
+        Invincibility,
+        SuperDamage,
+        SuperFireRate
+    }
+
     void Start()
     {
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
-    }
-
-    private void Update()
-    {
     }
 
     public void TakeDamage(int damage)
@@ -55,28 +62,40 @@ public class PlayerProperties : MonoBehaviour
         gun.totalAmmo += ammoNo;
     }
 
-    public IEnumerator InvincibilityEffect(float duration)
+    public void StartEffect(float duration, TemporaryEffect effectType)
+    {
+        switch (effectType)
+        {
+            case TemporaryEffect.Invincibility:
+                StartCoroutine(InvincibilityEffect(duration));
+                break;
+            case TemporaryEffect.SuperDamage:
+                StartCoroutine(SuperDamageEffect(duration));
+                break;
+            case TemporaryEffect.SuperFireRate:
+                StartCoroutine(SuperFireRateEffect(duration));
+                break;
+        }
+    }
+
+    private IEnumerator InvincibilityEffect(float duration)
     {
         _isInvincible = true;
         yield return new WaitForSeconds(duration);
         _isInvincible = false;
     }
 
-    public IEnumerator SuperDamageEffect(float duration)
+    private static IEnumerator SuperDamageEffect(float duration)
     {
-        var gun = GetComponentInChildren<Gun>();
-        gun.damage *= 2;
+        DamageMultiplier = 5f;
         yield return new WaitForSeconds(duration);
-        gun.damage /= 2;
+        DamageMultiplier /= 5f;
     }
 
-    public IEnumerator SuperFireRateEffect(float duration)
+    private static IEnumerator SuperFireRateEffect(float duration)
     {
-        var gun = GetComponentInChildren<Gun>();
-        gun.fireRate *= 1.5f;
+        FireRateMultiplier = 1.5f;
         yield return new WaitForSeconds(duration);
-        gun.fireRate /= 1.5f;
+        FireRateMultiplier /= 1.5f;
     }
-
-    
-} 
+}

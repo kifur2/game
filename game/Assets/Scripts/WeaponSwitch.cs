@@ -4,28 +4,30 @@ public class WeaponSwitch : MonoBehaviour
 {
     public int selectedWeapon = 0;
 
-    void Start()
+    private void Start()
     {
         SelectWeapon();
     }
 
-    void Update()
+    private void Update()
     {
-        int prevWeapon = selectedWeapon;
+        var prevWeapon = selectedWeapon;
 
-        if(Input.GetAxis("Mouse ScrollWheel") > 0f) {
+        if (Input.GetAxis("Mouse ScrollWheel") > 0f)
+        {
             selectedWeapon++;
 
             if (selectedWeapon > transform.childCount - 1)
                 selectedWeapon = 0;
-	    }
+        }
 
-        if(Input.GetAxis("Mouse ScrollWheel") < 0f) {
+        if (Input.GetAxis("Mouse ScrollWheel") < 0f)
+        {
             selectedWeapon--;
 
             if (selectedWeapon < 0)
                 selectedWeapon = transform.childCount - 1;
-	    }
+        }
 
         if (Input.GetKeyDown(KeyCode.Alpha1))
             selectedWeapon = 0;
@@ -43,14 +45,20 @@ public class WeaponSwitch : MonoBehaviour
             SelectWeapon();
     }
 
-    void SelectWeapon() {
-        int i = 0; 
-		foreach(Transform weapon in transform) {
-            if (i == selectedWeapon) 
-                weapon.gameObject.SetActive(true);
-            else
-	            weapon.gameObject.SetActive(false);
-            i++;	
-	    }
+    private void SelectWeapon()
+    {
+        if (Gun.ReloadCoroutine != null)
+        {
+            StopCoroutine(Gun.ReloadCoroutine);
+            Gun.ReloadCoroutine = null;
+            Gun.IsReloading = false;
+        }
+
+        var i = 0;
+        foreach (Transform weapon in transform)
+        {
+            weapon.gameObject.SetActive(i == selectedWeapon);
+            i++;
+        }
     }
 }

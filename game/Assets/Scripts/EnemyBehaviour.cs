@@ -12,8 +12,8 @@ public class EnemyBehaviour : MonoBehaviour
     public float followDistance = 20f;
     public float attackDistance = 2f;
     public int attackDamage = 10;
-    private float attackCooldown = 1.0f; // Cooldown in seconds
-    private float lastAttackTime = 0;
+    private const float AttackCooldown = 1.0f; // Cooldown in seconds
+    private float _lastAttackTime = 0;
     private NavMeshAgent _agent;
     private Animation _animation;
     private bool _isAttacking;
@@ -77,10 +77,10 @@ public class EnemyBehaviour : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (!other.CompareTag("Player") || !(Time.time > lastAttackTime + attackCooldown)) return;
+        if (!other.CompareTag("Player") || !(Time.time > _lastAttackTime + AttackCooldown)) return;
         
         var player = other.GetComponent<PlayerProperties>();
         player.TakeDamage(attackDamage);
-        lastAttackTime = Time.time;
+        _lastAttackTime = Time.time;
     }
 }

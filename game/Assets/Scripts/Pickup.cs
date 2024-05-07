@@ -9,7 +9,7 @@ public class Pickup : MonoBehaviour
         Heart,
         Shield,
         Sword,
-        Bow, 
+        Bow,
         Ammo
     }
 
@@ -21,10 +21,10 @@ public class Pickup : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if (!other.CompareTag("Player")) return;
-        
+
         var playerProperties = other.GetComponent<PlayerProperties>();
         if (playerProperties == null) return;
-        
+
         var uiIconsQueue = FindObjectOfType<UIIconsQueue>();
 
         switch (selectedType)
@@ -36,15 +36,15 @@ public class Pickup : MonoBehaviour
                 playerProperties.Heal();
                 break;
             case Type.Shield:
-                StartCoroutine(playerProperties.InvincibilityEffect(timedEffectDuration));
+                playerProperties.StartEffect(timedEffectDuration, PlayerProperties.TemporaryEffect.Invincibility);
                 uiIconsQueue.AddIcon(selectedType, timedEffectDuration);
                 break;
             case Type.Sword:
-                StartCoroutine(playerProperties.SuperDamageEffect(timedEffectDuration));
+                playerProperties.StartEffect(timedEffectDuration, PlayerProperties.TemporaryEffect.SuperDamage);
                 uiIconsQueue.AddIcon(selectedType, timedEffectDuration);
                 break;
             case Type.Bow:
-                StartCoroutine(playerProperties.SuperFireRateEffect(timedEffectDuration));
+                playerProperties.StartEffect(timedEffectDuration, PlayerProperties.TemporaryEffect.SuperFireRate);
                 uiIconsQueue.AddIcon(selectedType, timedEffectDuration);
                 break;
             case Type.Ammo:
@@ -54,9 +54,9 @@ public class Pickup : MonoBehaviour
                 Debug.LogWarning("Unhandled pickup type: " + selectedType);
                 break;
         }
-        
-        if(bonusAudioClip != null)
-			AudioSource.PlayClipAtPoint(bonusAudioClip, gameObject.transform.position);
+
+        if (bonusAudioClip != null)
+            AudioSource.PlayClipAtPoint(bonusAudioClip, gameObject.transform.position);
         Destroy(gameObject);
     }
 }
