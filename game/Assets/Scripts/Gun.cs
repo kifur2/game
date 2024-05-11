@@ -16,9 +16,9 @@ public class Gun : MonoBehaviour
 
     public Camera fpsCam;
     public ParticleSystem muzzleFlash;
+    public ParticleSystem defaultImpact;
 
     public Text ammoDisplay;
-
     public AudioSource audioSource;
     public AudioClip shootAudioClip;
     public AudioClip reloadAudioClip;
@@ -84,11 +84,26 @@ public class Gun : MonoBehaviour
             audioSource.PlayOneShot(shootAudioClip);
         }
 
-        if (!Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out var hit, range)) return;
-        var target = hit.transform.GetComponent<Target>();
-        if (target != null)
+        if (Physics.Raycast(fpsCam.transform.position, transform.forward, out var hit, range))
         {
-            target.TakeDamage(damage * PlayerProperties.DamageMultiplier);
-        }
+			var target = hit.transform.GetComponent<MonoBehaviour>();
+
+            switch (target) {
+
+                case Target t:
+				    t.TakeDamage(damage * PlayerProperties.DamageMultiplier);
+					var part = Instantiate(t.impactParticleSystem, hit.point, Quaternion.LookRotation(hit.normal));
+					part.transform.parent = t.transform;
+		            break;
+
+                case null:
+                    Instantiate(defaultImpact, hit.point, Quaternion.LookRotation(hit.normal));
+		            break;
+
+                default:
+                    break;
+	        }
+	    }
     }
+
 }

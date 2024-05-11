@@ -14,6 +14,7 @@ public class Target : MonoBehaviour
     public AudioClip hitEffect;
 
     public MonsterSpawner spawner;
+    public ParticleSystem impactParticleSystem;
 
     void Start()
     {
@@ -23,7 +24,6 @@ public class Target : MonoBehaviour
     public void TakeDamage(float amount)
     {
         if (!_alive) return;
-        Debug.Log("DamageDone: " + amount);
         health -= amount;
         audioSource.PlayDelayed(0.4f);
         audioSource.PlayOneShot(hitEffect);
