@@ -39,7 +39,7 @@ public class PlayerProperties : MonoBehaviour
         healthBar.SetHealth(currentHealth);
         if (currentHealth <= 0)
         {
-            AudioSource.PlayClipAtPoint(deathAudioClip, gameObject.transform.position);
+            AudioSource.PlayClipAtPoint(deathAudioClip, gameObject.transform.position, 0.4f);
             Debug.Log("YOU DEAD!");
         }
     }
