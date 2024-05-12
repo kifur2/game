@@ -56,7 +56,7 @@ public class Pickup : MonoBehaviour
         }
 
         if (bonusAudioClip != null)
-            AudioSource.PlayClipAtPoint(bonusAudioClip, gameObject.transform.position);
+            AudioSource.PlayClipAtPoint(bonusAudioClip, gameObject.transform.position, 0.2f);
         Destroy(gameObject);
     }
 }
