@@ -1287,6 +1287,7 @@ MonoBehaviour:
   audioSource: {fileID: 481540590072910575}
   hitEffect: {fileID: 8300000, guid: a37f44cbf8c2a7443a3c361efa2f233a, type: 3}
   spawner: {fileID: 0}
+  impactParticleSystem: {fileID: 7596840329405069804, guid: b3141efe00903477886e3b63ebb786c7, type: 3}
 --- !u!195 &5612231467730166405
 NavMeshAgent:
   m_ObjectHideFlags: 0
