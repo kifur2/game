@@ -24,7 +24,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 119059
+  controlID: 131258
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -142,7 +142,8 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 119060
+  controlID: 131248
+
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -167,7 +168,8 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 119061
+  controlID: 131249
+
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -228,7 +230,8 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: ec01f7ff7cf50500
+      m_ExpandedIDs: ec9ff4ff36a8f5ff3ea8f5ff72b2f5ffa644f6ffc465f6ff009bf6ffc4cff6ff1c63faff4484faffec38fbff3aebfbff40b9ffff48b9ffff94c3ffffeafaffff061e06003a1e060014270600e45606000c570600
+
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -335,7 +338,8 @@ MonoBehaviour:
       collapsed: 0
       displayed: 1
       snapOffset: {x: 0, y: 0}
-      snapOffsetDelta: {x: 0, y: 25}
+      snapOffsetDelta: {x: 0, y: 0}
+
       snapCorner: 0
       id: unity-scene-view-toolbar
       index: 0
@@ -498,7 +502,8 @@ MonoBehaviour:
       containerId: overlay-container--right
       floating: 0
       collapsed: 0
-      displayed: 1
+      displayed: 0
+
       snapOffset: {x: 0, y: 25}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
@@ -530,8 +535,10 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_WindowGUID: 6e6c10cda05c040be8207b116e98cd21
   m_Gizmos: 0
-  m_OverrideSceneCullingMask: 0
-  m_SceneIsLit: 0
+
+  m_OverrideSceneCullingMask: 6917529027641081856
+  m_SceneIsLit: 1
+
   m_SceneLighting: 1
   m_2DMode: 0
   m_isRotationLocked: 0
@@ -552,7 +559,7 @@ MonoBehaviour:
   m_SceneViewState:
     m_AlwaysRefresh: 0
     showFog: 1
-    showSkybox: 0
+    showSkybox: 1
     showFlares: 1
     showImageEffects: 1
     showParticleSystems: 1
@@ -637,8 +644,10 @@ MonoBehaviour:
     y: 432
     width: 1099.5
     height: 299
+
   m_MinSize: {x: 231, y: 271}
   m_MaxSize: {x: 10001, y: 10021}
+
   m_ActualView: {fileID: 10}
   m_Panes:
   - {fileID: 10}
@@ -693,6 +702,7 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
+
   - Assets/OutSourcedPackages/UnityTechnologies/ParticlePack/EffectExamples/Weapon
     Effects/Prefabs
   m_LastFoldersGridSize: -1
@@ -759,6 +769,7 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 7ef50500
     m_LastClickedInstanceID: 390526
     m_HadKeyboardFocusLastEvent: 1
+
     m_ExpandedInstanceIDs: c62300001e5d000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
