@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8202754977240611276}
   - component: {fileID: 1966333639720052017}
   - component: {fileID: -3420952581282908895}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Heart
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -72,6 +72,10 @@ PrefabInstance:
     - target: {fileID: 1000010714891294, guid: 5a0537415d4017c4fad7a4986f502dc1, type: 3}
       propertyPath: m_Name
       value: Heart
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000010714891294, guid: 5a0537415d4017c4fad7a4986f502dc1, type: 3}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4000013886378248, guid: 5a0537415d4017c4fad7a4986f502dc1, type: 3}
       propertyPath: m_RootOrder

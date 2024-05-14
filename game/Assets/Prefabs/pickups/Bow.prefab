@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1198149594241458636}
   - component: {fileID: 1198149594241458639}
   - component: {fileID: 1198149594241458638}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Bow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -128,6 +128,10 @@ PrefabInstance:
     - target: {fileID: 3317823749142253822, guid: d4958227484245e4592c41ab2c02ad22, type: 3}
       propertyPath: m_Name
       value: Bow_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 3317823749142253822, guid: d4958227484245e4592c41ab2c02ad22, type: 3}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6366871878821540098, guid: d4958227484245e4592c41ab2c02ad22, type: 3}

@@ -26,6 +26,7 @@ public class Gun : MonoBehaviour
     private float _nextTimeToFire = 0f;
     public static bool IsReloading = false;
     public static Coroutine ReloadCoroutine;
+    public LayerMask ignoreLayers;
 
     private void Update()
     {
@@ -84,26 +85,24 @@ public class Gun : MonoBehaviour
             audioSource.PlayOneShot(shootAudioClip);
         }
 
-        if (Physics.Raycast(fpsCam.transform.position, transform.forward, out var hit, range))
+        // Create a RaycastHit variable to store information about what was hit
+        if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out var hit, range, ~ignoreLayers))
         {
-			var target = hit.transform.GetComponent<MonoBehaviour>();
+            var target = hit.transform.GetComponent<MonoBehaviour>();
 
-            switch (target) {
-
+            switch (target)
+            {
                 case Target t:
-				    t.TakeDamage(damage * PlayerProperties.DamageMultiplier);
-					var part = Instantiate(t.impactParticleSystem, hit.point, Quaternion.LookRotation(hit.normal));
-					part.transform.parent = t.transform;
-		            break;
+                    t.TakeDamage(damage * PlayerProperties.DamageMultiplier);
+                    var part = Instantiate(t.impactParticleSystem, hit.point, Quaternion.LookRotation(hit.normal));
+                    part.transform.parent = t.transform;
+                    break;
 
                 case null:
                     Instantiate(defaultImpact, hit.point, Quaternion.LookRotation(hit.normal));
-		            break;
-
-                default:
                     break;
-	        }
-	    }
+            }
+        }
     }
 
 }

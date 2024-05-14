@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44664735, g: 0.49649268, b: 0.57486, a: 1}
+  m_IndirectSpecularColor: {r: 0.44664782, g: 0.49649352, b: 0.57486135, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -11766,6 +11766,10 @@ PrefabInstance:
       propertyPath: reloadAudioClip
       value: 
       objectReference: {fileID: 8300000, guid: 7c4dc9e0c4a354ba9b329ed209bc4608, type: 3}
+    - target: {fileID: 5722273096386374795, guid: 333567aa41d18cd488bdffbb5facfb7a, type: 3}
+      propertyPath: ignoreLayers.m_Bits
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 5722273096386374797, guid: 333567aa41d18cd488bdffbb5facfb7a, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -11798,6 +11802,10 @@ PrefabInstance:
       propertyPath: reloadAudioClip
       value: 
       objectReference: {fileID: 8300000, guid: 7c4dc9e0c4a354ba9b329ed209bc4608, type: 3}
+    - target: {fileID: 5722273096605489807, guid: 333567aa41d18cd488bdffbb5facfb7a, type: 3}
+      propertyPath: ignoreLayers.m_Bits
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 5722273096958812987, guid: 333567aa41d18cd488bdffbb5facfb7a, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -11842,6 +11850,10 @@ PrefabInstance:
       propertyPath: reloadAudioClip
       value: 
       objectReference: {fileID: 8300000, guid: 7c4dc9e0c4a354ba9b329ed209bc4608, type: 3}
+    - target: {fileID: 5722273097508537857, guid: 333567aa41d18cd488bdffbb5facfb7a, type: 3}
+      propertyPath: ignoreLayers.m_Bits
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 5723060737692271070, guid: 333567aa41d18cd488bdffbb5facfb7a, type: 3}
       propertyPath: m_IsActive
       value: 0

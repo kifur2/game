@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5448082519966255668}
   - component: {fileID: 7112046125980300338}
   - component: {fileID: 4783896957920390342}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Diamond
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -72,6 +72,10 @@ PrefabInstance:
     - target: {fileID: 1000010880751780, guid: c3c0707254334a64ca8198f7486e977d, type: 3}
       propertyPath: m_Name
       value: 5 Side Diamond
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000010880751780, guid: c3c0707254334a64ca8198f7486e977d, type: 3}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4000010140368820, guid: c3c0707254334a64ca8198f7486e977d, type: 3}
       propertyPath: m_RootOrder
