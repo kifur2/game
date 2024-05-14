@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 488766}
   - component: {fileID: 3377518}
   - component: {fileID: 2345842}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Shell_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -93,7 +93,7 @@ GameObject:
   m_Component:
   - component: {fileID: 441548}
   - component: {fileID: 9584650}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Bullet762_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -149,7 +149,7 @@ GameObject:
   - component: {fileID: 455628}
   - component: {fileID: 3320378}
   - component: {fileID: 2312332}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Shell
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -232,7 +232,7 @@ GameObject:
   - component: {fileID: 416142}
   - component: {fileID: 3373142}
   - component: {fileID: 2353754}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Bullet_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -314,7 +314,7 @@ GameObject:
   m_Component:
   - component: {fileID: 455966}
   - component: {fileID: 9536084}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Bullet762_LowPoly(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -370,7 +370,7 @@ GameObject:
   - component: {fileID: 491884}
   - component: {fileID: 3329070}
   - component: {fileID: 2373946}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -453,7 +453,7 @@ GameObject:
   - component: {fileID: 425028}
   - component: {fileID: -376128863002993934}
   - component: {fileID: 12672694822848326}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Ammo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
