@@ -85,7 +85,6 @@ public class Gun : MonoBehaviour
             audioSource.PlayOneShot(shootAudioClip);
         }
 
-        // Create a RaycastHit variable to store information about what was hit
         if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out var hit, range, ~ignoreLayers))
         {
             var target = hit.transform.GetComponent<MonoBehaviour>();
