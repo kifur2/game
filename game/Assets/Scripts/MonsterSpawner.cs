@@ -18,17 +18,14 @@ public class MonsterSpawner : MonoBehaviour
 
     public List<GameObject> spawnedMonsters;
     private int _currentWave;
-    [SerializeField]
-    private float spawnRangeX = 10;
-    [SerializeField]
-    private float spawnRangeY = 10;
+    [SerializeField] private float spawnRangeMax = 15;
+    [SerializeField] private float spawnRangeMin = 4;
 
     void Start()
     {
         SpawnWave();
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (spawnedMonsters.Count == 0)
@@ -37,6 +34,7 @@ public class MonsterSpawner : MonoBehaviour
             SpawnWave();
         }
     }
+
     void SpawnWave()
     {
         if (waves != null && waves.Length > _currentWave)
@@ -59,22 +57,25 @@ public class MonsterSpawner : MonoBehaviour
     Vector3 FindSpawnLocation()
     {
         Vector3 spawnPosition;
-        
+
         for (int i = 0; i < 10; i++)
         {
+            float distance = Random.Range(spawnRangeMin, spawnRangeMax);
+            float angle = Random.Range(0, 2 * Mathf.PI);
+
+            float newX = player.position.x + distance * Mathf.Cos(angle);
+            float newZ = player.position.z + distance * Mathf.Sin(angle);
             spawnPosition = new Vector3(
-                Random.Range(-spawnRangeX, spawnRangeX) + transform.position.x,
-                transform.position.y,
-                Random.Range(-spawnRangeY, spawnRangeY) + transform.position.z
+                newX,
+                player.position.y,
+                newZ
             );
             if (Physics.Raycast(spawnPosition, Vector3.down, 5))
                 return spawnPosition;
         }
 
         Debug.Log("Suitable spawn position not found.");
-        
-        return transform.position; 
-        
-    }
 
+        return transform.position;
+    }
 }
