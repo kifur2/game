@@ -7,11 +7,13 @@ public class MonsterSpawner : MonoBehaviour
     [System.Serializable]
     public class WaveContent
     {
-        [SerializeField] private GameObject[] monsterSpawn;
-        public GameObject[] MonsterSpawn => monsterSpawn;
+        [SerializeField] private int[] monstersAmount;
+        public int[] MonstersAmount => monstersAmount;
     }
 
-    [SerializeField] private WaveContent[] waves;
+    public bool infiniteWaves;
+    [SerializeField] private GameObject[] monsterSpawnPrefabs;
+    [SerializeField] private List<WaveContent> waves;
     [SerializeField] private Transform enemiesParentObject;
     [SerializeField] private Transform pickupsParentObject;
     [SerializeField] private Transform player;
@@ -37,21 +39,52 @@ public class MonsterSpawner : MonoBehaviour
 
     void SpawnWave()
     {
-        if (waves != null && waves.Length > _currentWave)
+        if (waves != null)
         {
-            foreach (var monster in waves[_currentWave].MonsterSpawn)
+            if (_currentWave >= waves.Count)
             {
-                GameObject m = Instantiate(monster, FindSpawnLocation(), Quaternion.identity, enemiesParentObject);
-                m.GetComponent<EnemyBehaviour>().playerTransform = player;
-                m.GetComponent<Target>().parentObject = pickupsParentObject;
-                m.GetComponent<Target>().spawner = this;
-                spawnedMonsters.Add(m);
+                if (infiniteWaves)
+                {
+                    waves.Add(waves[_currentWave - 1]);
+                    for (int i = 0; i < waves[_currentWave].MonstersAmount.Length; i++)
+                    {
+                        waves[_currentWave].MonstersAmount[i] += waves[_currentWave].MonstersAmount.Length - i;
+                        if (Random.Range(0, 1) < 0.3)
+                        {
+                            waves[_currentWave].MonstersAmount[i] -= 1;
+                        }
+                    }
+                }
+                else
+                {
+                    Debug.LogError("Wave index out of range.");
+                    return;
+                }
+            }
+
+
+            for (int i = 0; i < waves[_currentWave].MonstersAmount.Length; i++)
+            {
+                for (int j = 0; j < waves[_currentWave].MonstersAmount[i]; j++)
+                {
+                    SpawnEnemy(i);
+                }
             }
         }
         else
         {
-            Debug.LogError("Wave index out of range or waves not defined.");
+            Debug.LogError("Waves not defined.");
         }
+    }
+
+    private void SpawnEnemy(int i)
+    {
+        GameObject m = Instantiate(monsterSpawnPrefabs[i], FindSpawnLocation(),
+            Quaternion.identity, enemiesParentObject);
+        m.GetComponent<EnemyBehaviour>().playerTransform = player;
+        m.GetComponent<Target>().parentObject = pickupsParentObject;
+        m.GetComponent<Target>().spawner = this;
+        spawnedMonsters.Add(m);
     }
 
     Vector3 FindSpawnLocation()
