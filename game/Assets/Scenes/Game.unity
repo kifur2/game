@@ -3144,33 +3144,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622a1833bbbb0f844a13ee308d5e13a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  infiniteWaves: 1
+  monsterSpawnPrefabs:
+  - {fileID: 5613174193057508031, guid: 303f9cd2a9418b945826e1f1f8230fae, type: 3}
+  - {fileID: 5792744366562842766, guid: 4e7afdf31c20ebf419ea38bf1d358719, type: 3}
   waves:
-  - monsterSpawn:
-    - {fileID: 5613174193057508031, guid: 303f9cd2a9418b945826e1f1f8230fae, type: 3}
-    - {fileID: 5613174193057508031, guid: 303f9cd2a9418b945826e1f1f8230fae, type: 3}
-    - {fileID: 5613174193057508031, guid: 303f9cd2a9418b945826e1f1f8230fae, type: 3}
-  - monsterSpawn:
-    - {fileID: 5613174193057508031, guid: 303f9cd2a9418b945826e1f1f8230fae, type: 3}
-    - {fileID: 5613174193057508031, guid: 303f9cd2a9418b945826e1f1f8230fae, type: 3}
-    - {fileID: 5613174193057508031, guid: 303f9cd2a9418b945826e1f1f8230fae, type: 3}
-  - monsterSpawn:
-    - {fileID: 5613174193057508031, guid: 303f9cd2a9418b945826e1f1f8230fae, type: 3}
-    - {fileID: 5613174193057508031, guid: 303f9cd2a9418b945826e1f1f8230fae, type: 3}
-    - {fileID: 5613174193057508031, guid: 303f9cd2a9418b945826e1f1f8230fae, type: 3}
-    - {fileID: 5613174193057508031, guid: 303f9cd2a9418b945826e1f1f8230fae, type: 3}
-    - {fileID: 5613174193057508031, guid: 303f9cd2a9418b945826e1f1f8230fae, type: 3}
-  - monsterSpawn:
-    - {fileID: 5613174193057508031, guid: 303f9cd2a9418b945826e1f1f8230fae, type: 3}
-    - {fileID: 5613174193057508031, guid: 303f9cd2a9418b945826e1f1f8230fae, type: 3}
-    - {fileID: 5613174193057508031, guid: 303f9cd2a9418b945826e1f1f8230fae, type: 3}
-    - {fileID: 5613174193057508031, guid: 303f9cd2a9418b945826e1f1f8230fae, type: 3}
-    - {fileID: 5613174193057508031, guid: 303f9cd2a9418b945826e1f1f8230fae, type: 3}
-    - {fileID: 5613174193057508031, guid: 303f9cd2a9418b945826e1f1f8230fae, type: 3}
-    - {fileID: 5613174193057508031, guid: 303f9cd2a9418b945826e1f1f8230fae, type: 3}
-    - {fileID: 5613174193057508031, guid: 303f9cd2a9418b945826e1f1f8230fae, type: 3}
-    - {fileID: 5613174193057508031, guid: 303f9cd2a9418b945826e1f1f8230fae, type: 3}
-    - {fileID: 5792744366562842766, guid: 4e7afdf31c20ebf419ea38bf1d358719, type: 3}
-  - monsterSpawn: []
+  - monstersAmount: 0300000000000000
+  - monstersAmount: 0700000000000000
+  - monstersAmount: 0700000001000000
   enemiesParentObject: {fileID: 14775457}
   pickupsParentObject: {fileID: 1043197978}
   player: {fileID: 1668189153}

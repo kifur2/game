@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2adf3fa5-de4c-44b7-a422-f29cfaa37652" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+    <list default="true" id="2adf3fa5-de4c-44b7-a422-f29cfaa37652" name="Changes" comment="[38] fix spawn points">
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MonsterSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MonsterSpawner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,12 +15,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Rebase.Settings">
-    <option name="NEW_BASE" value="origin/25-add-startup-menu-big-play-button-+-startupscene-scene" />
+    <option name="NEW_BASE" value="origin/main" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$/.." value="26-add-pause-with-exit-and-settings-buttons" />
+        <entry key="$PROJECT_DIR$/.." value="38-change-spawn-points-of-enemies" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -79,7 +81,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "39-make-infinite-waves-+-refactor-enemies-choosing-in-waves",
     "ignore.virus.scanning.warn.message": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -276,7 +278,23 @@
       <option name="project" value="LOCAL" />
       <updated>1714839213885</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="[36] bullets go through pickups">
+      <option name="closed" value="true" />
+      <created>1715692603121</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1715692603121</updated>
+    </task>
+    <task id="LOCAL-00017" summary="[38] fix spawn points">
+      <option name="closed" value="true" />
+      <created>1715693292430</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1715693292430</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -304,6 +322,8 @@
     <MESSAGE value="[26] some moving of folders + player prefab fix" />
     <MESSAGE value="[26] added working pause button" />
     <MESSAGE value="[26] deleted Library folder" />
-    <option name="LAST_COMMIT_MESSAGE" value="[26] deleted Library folder" />
+    <MESSAGE value="[36] bullets go through pickups" />
+    <MESSAGE value="[38] fix spawn points" />
+    <option name="LAST_COMMIT_MESSAGE" value="[38] fix spawn points" />
   </component>
 </project>
