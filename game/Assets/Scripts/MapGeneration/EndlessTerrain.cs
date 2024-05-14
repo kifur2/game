@@ -10,7 +10,7 @@ public class EndlessTerrain : MonoBehaviour
     private const float SquareViewerMoveThresholdForChunkUpdate =
         ViewerMoveThresholdForChunkUpdate * ViewerMoveThresholdForChunkUpdate;
 
-    private const float Scale = 5f;
+    private const float Scale = 2f;
 
     public LODInfo[] detailLevels;
     public static float MaxViewDistance;
@@ -33,7 +33,7 @@ public class EndlessTerrain : MonoBehaviour
     {
         _mapGenerator = FindObjectOfType<MapGenerator>();
         MaxViewDistance = detailLevels[^1].visibleDistanceTreshold;
-        _chunkSize = MapGenerator.MapChunkSize - 1;
+        _chunkSize = MapGenerator.mapChunkSize - 1;
         _chunksVisibleInViewDistance = Mathf.RoundToInt(MaxViewDistance / _chunkSize);
         UpdateVisibleChunks();
     }
@@ -88,8 +88,10 @@ public class EndlessTerrain : MonoBehaviour
 
         private MeshRenderer _meshRenderer;
         private MeshFilter _meshFilter;
+        private MeshCollider _meshCollider;
         private LODInfo[] detailLevels;
         private LODMesh[] _lodMeshes;
+        private LODMesh _collisionLODMesh;
 
         private MapData _mapData;
         private bool _mapDataReceived;
@@ -106,6 +108,7 @@ public class EndlessTerrain : MonoBehaviour
 
             _meshRenderer = _meshObject.AddComponent<MeshRenderer>();
             _meshFilter = _meshObject.AddComponent<MeshFilter>();
+            _meshCollider = _meshObject.AddComponent<MeshCollider>();
             _meshRenderer.material = material;
             _meshObject.transform.position = positionV3 * Scale;
             _meshObject.transform.parent = parent;
@@ -116,6 +119,10 @@ public class EndlessTerrain : MonoBehaviour
             for (var i = 0; i < this.detailLevels.Length; i++)
             {
                 _lodMeshes[i] = new LODMesh(this.detailLevels[i].lod, UpdateTerrainChunk);
+                if (detailLevels[i].useForCollider)
+                {
+                    _collisionLODMesh = _lodMeshes[i];
+                }
             }
 
             _mapGenerator.RequestMapData(_position, OnMapDataReceived);
@@ -126,8 +133,8 @@ public class EndlessTerrain : MonoBehaviour
             _mapData = mapData;
             _mapDataReceived = true;
 
-            Texture2D texture2D = TextureGenerator.TextureFromColorMap(mapData.ColorMap, MapGenerator.MapChunkSize,
-                MapGenerator.MapChunkSize);
+            Texture2D texture2D = TextureGenerator.TextureFromColorMap(mapData.ColorMap, MapGenerator.mapChunkSize,
+                MapGenerator.mapChunkSize);
             _meshRenderer.material.mainTexture = texture2D;
 
             UpdateTerrainChunk();
@@ -160,6 +167,7 @@ public class EndlessTerrain : MonoBehaviour
                     {
                         previousLODIndex = lodIndex;
                         _meshFilter.mesh = lodMesh.mesh;
+                        _meshCollider.sharedMesh = lodMesh.mesh;
                     }
                     else if (!lodMesh.hasRequestedMesh)
                     {
@@ -167,6 +175,17 @@ public class EndlessTerrain : MonoBehaviour
                     }
                 }
 
+                if (lodIndex == 0)
+                {
+                    if (_collisionLODMesh.hasMesh)
+                    {
+                        _meshCollider.sharedMesh = _collisionLODMesh.mesh;
+                    }else if (!_collisionLODMesh.hasRequestedMesh)
+                    {
+                        _collisionLODMesh.RequestMesh(_mapData);
+                    }
+                }
+                
                 terrainChunksVisibleLastUpdate.Add(this);
             }
 
@@ -217,5 +236,6 @@ public class EndlessTerrain : MonoBehaviour
     {
         public int lod;
         public float visibleDistanceTreshold;
+        public bool useForCollider;
     }
 }
