@@ -134,8 +134,7 @@ public class MonsterSpawner : MonoBehaviour
             float height;
             try
             {
-                height = endlessTerrain.GetHeightAtPosition(flatPosition) *
-                         EndlessTerrain.MapGenerator.meshHeightMultiplier +
+                height = endlessTerrain.GetHeightAtPosition(flatPosition) +
                          heightOffset;
             }
             catch (KeyNotFoundException)

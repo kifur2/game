@@ -28,7 +28,7 @@ public class EndlessTerrain : MonoBehaviour
     private static int _chunkSize;
     private int _chunksVisibleInViewDistance;
 
-    private Dictionary<Vector2, TerrainChunk> _terrainChunkDictionary = new Dictionary<Vector2, TerrainChunk>();
+    private static Dictionary<Vector2, TerrainChunk> _terrainChunkDictionary = new Dictionary<Vector2, TerrainChunk>();
     private static List<TerrainChunk> _terrainChunksVisibleLastUpdate = new List<TerrainChunk>();
 
     private void Start()
@@ -51,7 +51,6 @@ public class EndlessTerrain : MonoBehaviour
         }
     }
 
-
     void UpdateVisibleChunks()
     {
         foreach (var terrainChunk in _terrainChunksVisibleLastUpdate)
@@ -72,12 +71,13 @@ public class EndlessTerrain : MonoBehaviour
 
                 if (_terrainChunkDictionary.ContainsKey(viewedChunkCoord))
                 {
-                    _terrainChunkDictionary[viewedChunkCoord].UpdateTerrainChunk();
+                    var chunk = _terrainChunkDictionary[viewedChunkCoord];
+                    chunk.UpdateTerrainChunk();
                 }
                 else
                 {
-                    _terrainChunkDictionary.Add(viewedChunkCoord,
-                        new TerrainChunk(viewedChunkCoord, _chunkSize, detailLevels, transform, mapMaterial));
+                    var newChunk = new TerrainChunk(viewedChunkCoord, _chunkSize, detailLevels, transform, mapMaterial);
+                    _terrainChunkDictionary.Add(viewedChunkCoord, newChunk);
                 }
             }
         }
@@ -105,6 +105,7 @@ public class EndlessTerrain : MonoBehaviour
         private GameObject _meshObject;
         private Vector2 _position;
         private Bounds _bounds;
+        private Vector2 _coords;
 
         private MeshRenderer _meshRenderer;
         private MeshFilter _meshFilter;
@@ -117,11 +118,12 @@ public class EndlessTerrain : MonoBehaviour
         private bool _mapDataReceived;
         private int _previousLODIndex = -1;
         private NavMeshSurface _navMeshSurface;
+        private static List<(Vector2, Vector2)> _createdLinks = new List<(Vector2, Vector2)>();
 
-        public TerrainChunk(Vector2 coord, int size, LODInfo[] detailLevels, Transform parent, Material material)
+        public TerrainChunk(Vector2 coords, int size, LODInfo[] detailLevels, Transform parent, Material material)
         {
             _detailLevels = detailLevels;
-            _position = coord * size;
+            _position = coords * size;
             _bounds = new Bounds(_position, Vector2.one * size);
             Vector3 positionV3 = new Vector3(_position.x, 0, _position.y);
 
@@ -163,6 +165,57 @@ public class EndlessTerrain : MonoBehaviour
             _navMeshSurface.overrideVoxelSize = true;
             _navMeshSurface.voxelSize = 0.1f;
         }
+        
+        private void CreateNavMeshLinks(TerrainChunk chunk, Vector2 viewedChunkCoord)
+        {
+            var adjacentCoords = new Vector2[]
+            {
+                new(viewedChunkCoord.x + 1, viewedChunkCoord.y),
+                new(viewedChunkCoord.x - 1, viewedChunkCoord.y),
+                new(viewedChunkCoord.x, viewedChunkCoord.y + 1),
+                new(viewedChunkCoord.x, viewedChunkCoord.y - 1)
+            };
+
+            foreach (var adjacentCoord in adjacentCoords)
+            {
+                if (!_terrainChunkDictionary.TryGetValue(adjacentCoord, out var adjacentChunk)) continue;
+                if (LinkExists(viewedChunkCoord, adjacentCoord)) continue;
+                chunk.CreateNavMeshLink(adjacentChunk, _meshObject.transform.parent);
+                _createdLinks.Add((viewedChunkCoord, adjacentCoord));
+                _createdLinks.Add((adjacentCoord, viewedChunkCoord));
+            }
+        }
+        private bool LinkExists(Vector2 coord1, Vector2 coord2)
+        {
+            return _createdLinks.Contains((coord1, coord2)) || _createdLinks.Contains((coord2, coord1));
+        }
+
+        public void CreateNavMeshLink(TerrainChunk adjacentChunk, Transform parent)
+        {
+            if (adjacentChunk != null)
+            {
+                AddNavMeshLink(this, adjacentChunk, parent);
+            }
+        }
+
+        public void AddNavMeshLink(TerrainChunk fromChunk, TerrainChunk toChunk, Transform parent)
+        {
+            NavMeshLink navMeshLink = new GameObject("NavMeshLink").AddComponent<NavMeshLink>();
+            navMeshLink.transform.parent = parent;
+
+            Vector3 fromPosition = fromChunk._meshObject.transform.localPosition;
+            Vector3 toPosition = toChunk._meshObject.transform.localPosition;
+
+            navMeshLink.startPoint = new Vector3(fromPosition.x, GetHeightAtPosition(new Vector2(fromPosition.x, fromPosition.z)), fromPosition.y);
+            navMeshLink.endPoint = new Vector3(toPosition.x, GetHeightAtPosition(new Vector2(toPosition.x, toPosition.z)), toPosition.y);
+
+            navMeshLink.width = 200f;
+            navMeshLink.costModifier = -1;
+            navMeshLink.bidirectional = true;
+            navMeshLink.area = 0;
+            navMeshLink.agentTypeID = 0;
+
+        }
 
         void OnMapDataReceived(MapData mapData)
         {
@@ -186,7 +239,7 @@ public class EndlessTerrain : MonoBehaviour
             int y = Mathf.Clamp(Mathf.RoundToInt(percentY * (MapData.HeightMap.GetLength(1) - 1)), 0,
                 MapData.HeightMap.GetLength(1) - 1);
 
-            return MapData.HeightMap[x, y];
+            return MapData.HeightMap[x, y]* MapGenerator.meshHeightMultiplier;
         }
 
 
@@ -196,6 +249,7 @@ public class EndlessTerrain : MonoBehaviour
             {
                 _navMeshSurface.navMeshData = new NavMeshData();
             }
+
             _navMeshSurface.BuildNavMesh();
         }
 
@@ -250,13 +304,14 @@ public class EndlessTerrain : MonoBehaviour
 
                 _terrainChunksVisibleLastUpdate.Add(this);
             }
-
+            
+            SetVisible(visible);
+            
             if (buildNavMesh)
             {
+                CreateNavMeshLinks(this, _coords);
                 BuildNavMesh();
             }
-
-            SetVisible(visible);
         }
 
 
