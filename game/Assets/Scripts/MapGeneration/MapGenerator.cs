@@ -31,21 +31,21 @@ public class MapGenerator : MonoBehaviour
 
     public bool autoUpdate = true;
     public TerrainType[] regions;
-    private static MapGenerator instance;
+    private static MapGenerator _instance;
 
     private Queue<MapThreadInfo<MapData>> _mapDataThreadInfoQueue = new Queue<MapThreadInfo<MapData>>();
     private Queue<MapThreadInfo<MeshData>> _meshDataThreadInfoQueue = new Queue<MapThreadInfo<MeshData>>();
 
-    public static int mapChunkSize
+    public static int MapChunkSize
     {
         get
         {
-            if (instance == null)
+            if (_instance == null)
             {
-                instance = FindObjectOfType<MapGenerator>();
+                _instance = FindObjectOfType<MapGenerator>();
             }
 
-            return instance.useFlatShading ? 95 : 239;
+            return _instance.useFlatShading ? 95 : 239;
         }
     }
 
@@ -60,14 +60,14 @@ public class MapGenerator : MonoBehaviour
         }
         else if (drawMode == DrawMode.ColorMap)
         {
-            display.DrawTexture(TextureGenerator.TextureFromColorMap(mapData.ColorMap, mapChunkSize, mapChunkSize));
+            display.DrawTexture(TextureGenerator.TextureFromColorMap(mapData.ColorMap, MapChunkSize, MapChunkSize));
         }
         else if (drawMode == DrawMode.Mesh)
         {
             display.DrawMesh(
                 MeshGenerator.GenerateTerrainMesh(mapData.HeightMap, meshHeightMultiplier, meshHeightCurve,
                     editorPreviewLOD, useFlatShading),
-                TextureGenerator.TextureFromColorMap(mapData.ColorMap, mapChunkSize, mapChunkSize));
+                TextureGenerator.TextureFromColorMap(mapData.ColorMap, MapChunkSize, MapChunkSize));
         }
     }
 
@@ -127,20 +127,20 @@ public class MapGenerator : MonoBehaviour
 
     private MapData GenerateMapData(Vector2 center)
     {
-        float[,] noiseMap = Noise.GenerateNoiseMap(mapChunkSize + 2, mapChunkSize + 2, seed, noiseScale, octaves,
+        float[,] noiseMap = Noise.GenerateNoiseMap(MapChunkSize + 2, MapChunkSize + 2, seed, noiseScale, octaves,
             persistance, lacunarity, center + offset, normalizeMode);
 
-        Color[] colorMap = new Color[mapChunkSize * mapChunkSize];
-        for (int y = 0; y < mapChunkSize; y++)
+        Color[] colorMap = new Color[MapChunkSize * MapChunkSize];
+        for (int y = 0; y < MapChunkSize; y++)
         {
-            for (int x = 0; x < mapChunkSize; x++)
+            for (int x = 0; x < MapChunkSize; x++)
             {
                 float currentHeight = noiseMap[x, y];
                 for (int i = 0; i < regions.Length; i++)
                 {
                     if (currentHeight >= regions[i].height)
                     {
-                        colorMap[y * mapChunkSize + x] = regions[i].color;
+                        colorMap[y * MapChunkSize + x] = regions[i].color;
                     }
                     else
                     {

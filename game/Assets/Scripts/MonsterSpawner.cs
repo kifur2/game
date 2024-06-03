@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class MonsterSpawner : MonoBehaviour
 {
@@ -17,23 +18,34 @@ public class MonsterSpawner : MonoBehaviour
     [SerializeField] private Transform enemiesParentObject;
     [SerializeField] private Transform pickupsParentObject;
     [SerializeField] private Transform player;
+    [SerializeField] private EndlessTerrain endlessTerrain;
 
     public List<GameObject> spawnedMonsters;
     private int _currentWave;
     [SerializeField] private float spawnRangeMax = 15;
     [SerializeField] private float spawnRangeMin = 4;
 
+    private bool _isSpawningWave = false;
+
+
     void Start()
     {
+        StartCoroutine(SpawnWaveWithDelay(3f));
+    }
+
+    IEnumerator SpawnWaveWithDelay(float delay)
+    {
+        _isSpawningWave = true;
+        yield return new WaitForSeconds(delay);
         SpawnWave();
+        _isSpawningWave = false;
     }
 
     void Update()
     {
-        if (spawnedMonsters.Count == 0)
+        if (!_isSpawningWave && spawnedMonsters.Count == 0)
         {
-            _currentWave++;
-            SpawnWave();
+            StartCoroutine(SpawnWaveWithDelay(3f));
         }
     }
 
@@ -79,36 +91,67 @@ public class MonsterSpawner : MonoBehaviour
 
     private void SpawnEnemy(int i)
     {
-        GameObject m = Instantiate(monsterSpawnPrefabs[i], FindSpawnLocation(),
-            Quaternion.identity, enemiesParentObject);
+        Vector3 position = FindSpawnLocation();
+        if (position == Vector3.zero) Debug.LogError("Position is zero");
+        GameObject m = Instantiate(monsterSpawnPrefabs[i], position, Quaternion.identity, enemiesParentObject);
         m.GetComponent<EnemyBehaviour>().playerTransform = player;
         m.GetComponent<Target>().parentObject = pickupsParentObject;
         m.GetComponent<Target>().spawner = this;
         spawnedMonsters.Add(m);
+        InitializeNavMeshAgent(m);
+    }
+
+    void InitializeNavMeshAgent(GameObject monster)
+    {
+        var navMeshAgent = monster.GetComponent<NavMeshAgent>();
+        if (navMeshAgent != null)
+        {
+            navMeshAgent.enabled = false;
+            StartCoroutine(EnableNavMeshAgent(navMeshAgent));
+        }
+    }
+
+    IEnumerator EnableNavMeshAgent(NavMeshAgent agent)
+    {
+        yield return new WaitForEndOfFrame();
+        agent.enabled = true;
     }
 
     Vector3 FindSpawnLocation()
     {
         Vector3 spawnPosition;
+        NavMeshHit hit;
+        const float heightOffset = 2.0f;
 
-        for (int i = 0; i < 10; i++)
+        for (int i = 0; i < 20; i++)
         {
             float distance = Random.Range(spawnRangeMin, spawnRangeMax);
             float angle = Random.Range(0, 2 * Mathf.PI);
 
             float newX = player.position.x + distance * Mathf.Cos(angle);
             float newZ = player.position.z + distance * Mathf.Sin(angle);
-            spawnPosition = new Vector3(
-                newX,
-                player.position.y,
-                newZ
-            );
-            if (Physics.Raycast(spawnPosition, Vector3.down, 5))
-                return spawnPosition;
+            Vector2 flatPosition = new Vector2(newX, newZ);
+            float height;
+            try
+            {
+                height = endlessTerrain.GetHeightAtPosition(flatPosition) *
+                         EndlessTerrain.MapGenerator.meshHeightMultiplier +
+                         heightOffset;
+            }
+            catch (KeyNotFoundException)
+            {
+                Debug.LogWarning("Chunk not found in dictionary for position: " + flatPosition);
+                continue;
+            }
+
+            spawnPosition = new Vector3(newX, height, newZ);
+            if (NavMesh.SamplePosition(spawnPosition, out hit, 1.0f, NavMesh.AllAreas))
+            {
+                return hit.position;
+            }
         }
 
-        Debug.Log("Suitable spawn position not found.");
-
-        return transform.position;
+        Debug.Log("Suitable spawn position not found on NavMesh.");
+        return new Vector3(player.position.x, player.position.y, player.position.z);
     }
 }
