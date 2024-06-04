@@ -16,7 +16,7 @@ public class Pickup : MonoBehaviour
     [SerializeField] private float timedEffectDuration = 0;
     [SerializeField] private Type selectedType;
 
-    public AudioClip bonusAudioClip;
+    private const string BonusAudioClipName = "PickUp";
 
     private void OnTriggerEnter(Collider other)
     {
@@ -54,9 +54,12 @@ public class Pickup : MonoBehaviour
                 Debug.LogWarning("Unhandled pickup type: " + selectedType);
                 break;
         }
-
-        if (bonusAudioClip != null)
-            AudioSource.PlayClipAtPoint(bonusAudioClip, gameObject.transform.position, 0.05f);
+        
+        if (AudioManager.Instance)
+        {
+            AudioManager.Instance.PlaySfxAtPosition(BonusAudioClipName, transform.position, 1f);
+        }
+        
         Destroy(gameObject);
     }
 }

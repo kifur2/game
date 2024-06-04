@@ -491,7 +491,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timedEffectDuration: 0
   selectedType: 5
-  bonusAudioClip: {fileID: 8300000, guid: b0e62ed71b1538648b719821f4f63b4c, type: 3}
+  bonusAudioClipName: PickUp
 --- !u!65 &12672694822848326
 BoxCollider:
   m_ObjectHideFlags: 0

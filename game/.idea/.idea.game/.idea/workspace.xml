@@ -4,13 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2adf3fa5-de4c-44b7-a422-f29cfaa37652" name="Changes" comment="[27] finally somehow works">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/CharacterDeathManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player-character.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player-character.prefab" afterDir="false" />
+    <list default="true" id="2adf3fa5-de4c-44b7-a422-f29cfaa37652" name="Changes" comment="[49] merge + scroll wheel added">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/InitialSceneSetup.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/SceneConfig.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UIController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/CrabMonster 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/CrabMonster 1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ghoul.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Ghoul.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/pickups/Ammo.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/pickups/Ammo.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/pickups/Bow.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/pickups/Bow.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/pickups/Diamond.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/pickups/Diamond.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/pickups/Heart.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/pickups/Heart.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/pickups/Shield.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/pickups/Shield.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/pickups/Sword.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/pickups/Sword.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/MapGenerator.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MapGenerator.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MainMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MainMenu.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PauseManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PauseManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CharacterDeathManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CharacterDeathManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DebugCameraController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DebugCameraController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EnemyBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EnemyBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gun.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gun.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InventoryUI.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InventoryUI.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Pickup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Pickup.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerProperties.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerProperties.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Target.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Target.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,7 +41,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$/.." value="27-try-to-create-random-map-generator" />
+        <entry key="$PROJECT_DIR$/.." value="49-add-dying" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -42,19 +59,33 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock://C:/Users/Jakub/Desktop/Kuba/studia/TGK/game/game/Assets/Scenes/MapGenerator.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Jakub/Desktop/Kuba/studia/TGK/game/game/Assets/Scenes/MapGenerator.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Jakub/Desktop/Kuba/studia/TGK/game/game/Assets/Scenes/MapGenerator.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Jakub/Desktop/Kuba/studia/TGK/game/game/Assets/Scripts/DebugCameraController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DebugCameraController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/EnemyBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Jakub/Desktop/Kuba/studia/TGK/game/game/Assets/Scripts/EnemyBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Jakub/Desktop/Kuba/studia/TGK/game/game/Assets/Scripts/Gun.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Jakub/Desktop/Kuba/studia/TGK/game/game/Assets/Scripts/Gun.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Gun.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/HealthBar.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/InputManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/InventoryUI.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Jakub/Desktop/Kuba/studia/TGK/game/game/Assets/Scripts/InputManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Jakub/Desktop/Kuba/studia/TGK/game/game/Assets/Scripts/MainMenu.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Jakub/Desktop/Kuba/studia/TGK/game/game/Assets/Scripts/MapGeneration/EndlessTerrain.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MapGeneration/HideOnPlay.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MapGeneration/MeshGenerator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MonsterSpawner.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Jakub/Desktop/Kuba/studia/TGK/game/game/Assets/Scripts/PauseManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Jakub/Desktop/Kuba/studia/TGK/game/game/Assets/Scripts/Pickup.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Pickup.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerLook.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerMotor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Jakub/Desktop/Kuba/studia/TGK/game/game/Assets/Scripts/PlayerProperties.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerProperties.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Jakub/Desktop/Kuba/studia/TGK/game/game/Assets/Scripts/PlayerProperties.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Jakub/Desktop/Kuba/studia/TGK/game/game/Assets/Scripts/Target.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Target.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ai.navigation@1.0.0-exp.4/Tests/Runtime/NavMeshSurfaceLinkTests.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.8.11/Unity.Burst.CodeGen/BurstILPostProcessor.cs" root0="SKIP_HIGHLIGHTING" />
@@ -63,6 +94,15 @@
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.shadergraph@12.1.14/Editor/Data/Graphs/SerializableMesh.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.shadergraph@12.1.14/Editor/Data/Nodes/UV/ParallaxMappingNode.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline@1.7.6/Editor/Shortcuts.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Jakub/Desktop/Kuba/studia/TGK/game/game/ProjectSettings/boot.config" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Jakub/Desktop/Kuba/studia/TGK/game/game/UserSettings/EditorUserSettings.asset" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Jakub/Desktop/Kuba/studia/TGK/game/game/UserSettings/EditorUserSettings.asset" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Jakub/Desktop/Kuba/studia/TGK/game/game/UserSettings/EditorUserSettings.asset" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Jakub/Desktop/Kuba/studia/TGK/game/game/UserSettings/EditorUserSettings.asset" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Jakub/Desktop/Kuba/studia/TGK/game/game/UserSettings/EditorUserSettings.asset" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Jakub/Desktop/Kuba/studia/TGK/game/game/UserSettings/EditorUserSettings.asset" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Jakub/Desktop/Kuba/studia/TGK/game/game/UserSettings/EditorUserSettings.asset" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Jakub/Desktop/Kuba/studia/TGK/game/game/UserSettings/EditorUserSettings.asset" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
@@ -89,7 +129,7 @@
     "Attach to Unity Editor.Attach to Unity Editor.executor": "Debug",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "49-add-dying",
+    "git-widget-placeholder": "40-audio-manager",
     "ignore.virus.scanning.warn.message": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -312,7 +352,23 @@
       <option name="project" value="LOCAL" />
       <updated>1717445588920</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="[49] added dying + fixed scene restarting">
+      <option name="closed" value="true" />
+      <created>1717496487168</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1717496487168</updated>
+    </task>
+    <task id="LOCAL-00020" summary="[49] merge + scroll wheel added">
+      <option name="closed" value="true" />
+      <created>1717498221595</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1717498221595</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -343,25 +399,8 @@
     <MESSAGE value="[36] bullets go through pickups" />
     <MESSAGE value="[38] fix spawn points" />
     <MESSAGE value="[27] finally somehow works" />
-    <option name="LAST_COMMIT_MESSAGE" value="[27] finally somehow works" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/MapGeneration/EndlessTerrain.cs</url>
-          <line>35</line>
-          <properties documentPath="C:\Users\Jakub\Desktop\Kuba\studia\TGK\game\game\Assets\Scripts\MapGeneration\EndlessTerrain.cs" containingFunctionPresentation="Method 'Start'">
-            <startOffsets>
-              <option value="1113" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1161" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="[49] added dying + fixed scene restarting" />
+    <MESSAGE value="[49] merge + scroll wheel added" />
+    <option name="LAST_COMMIT_MESSAGE" value="[49] merge + scroll wheel added" />
   </component>
 </project>

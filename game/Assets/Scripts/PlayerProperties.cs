@@ -12,7 +12,6 @@ public class PlayerProperties : MonoBehaviour
     private bool _isInvincible;
 
     public UnityEvent<PlayerProperties> onDiamondCollected;
-    public AudioClip deathAudioClip;
 
     public HealthBar healthBar;
 
@@ -39,10 +38,9 @@ public class PlayerProperties : MonoBehaviour
 
         currentHealth -= damage;
         healthBar.SetHealth(currentHealth);
-        
+
         if (currentHealth > 0) return;
-        
-        AudioSource.PlayClipAtPoint(deathAudioClip, gameObject.transform.position, 0.4f);
+
         characterDeathManager.TriggerDeath();
     }
 
