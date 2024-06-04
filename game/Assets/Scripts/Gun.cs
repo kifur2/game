@@ -31,24 +31,11 @@ public class Gun : MonoBehaviour
     private void Update()
     {
         ammoDisplay.text = ammo + " | " + totalAmmo;
-        if (IsReloading)
-            return;
-
-        if (ammo < maxAmmo && Input.GetKeyDown(KeyCode.R))
-        {
-            Reload();
-            return;
-        }
-
-        if (!Input.GetButton("Fire1") || ammo <= 0 || !(Time.time >= _nextTimeToFire)) return;
-        _nextTimeToFire = Time.time + 1f / (fireRate * PlayerProperties.FireRateMultiplier);
-        Shoot();
-        ammoDisplay.text = ammo + " | " + totalAmmo;
     }
 
-    private void Reload()
+    public void Reload()
     {
-        if (PauseManager.IsPaused || totalAmmo <= 0) return;
+        if (IsReloading || ammo >= maxAmmo || PauseManager.IsPaused || totalAmmo <= 0) return;
 
         IsReloading = true;
         ReloadCoroutine = StartCoroutine(ReloadInternal());
@@ -74,9 +61,11 @@ public class Gun : MonoBehaviour
     }
 
 
-    private void Shoot()
+    public void Shoot()
     {
-        if (PauseManager.IsPaused) return;
+        if (PauseManager.IsPaused || ammo <= 0 || !(Time.time >= _nextTimeToFire)) return;
+
+        _nextTimeToFire = Time.time + 1f / (fireRate * PlayerProperties.FireRateMultiplier);
 
         muzzleFlash.Play();
         ammo--;
