@@ -12,6 +12,7 @@ public class InputManager : MonoBehaviour
     public DebugCameraController debugCameraController;
 
     private PlayerMotor _motor;
+    private WeaponSwitch _weaponSwitch;
     private PlayerLook _look;
     private Canvas _canvas;
     private PauseManager _pauseManager;
@@ -26,13 +27,19 @@ public class InputManager : MonoBehaviour
         _motor = GetComponentInChildren<PlayerMotor>();
         _look = GetComponentInChildren<PlayerLook>();
         _canvas = GetComponentInChildren<Canvas>();
+        _weaponSwitch = GetComponentInChildren<WeaponSwitch>();
         _pauseManager = GetComponent<PauseManager>();
 
+        _debugActions.ToggleDebugCamera.performed += ctx => ToggleDebugCamera();
         _menuActions.Pause.performed += ctx => _pauseManager.TriggerPause();
         _onFootActions.Jump.performed += ctx => _motor.Jump();
         _onFootActions.Crouch.performed += ctx => _motor.Crouch();
         _onFootActions.Sprint.performed += ctx => _motor.Sprint();
-        _debugActions.ToggleDebugCamera.performed += ctx => ToggleDebugCamera();
+        _onFootActions.Shoot.performed += ctx => GetActiveGun()?.Shoot();
+        _onFootActions.Reload.performed += ctx => GetActiveGun()?.Reload();
+        _onFootActions.SwitchToGun.performed += ctx => _weaponSwitch.SelectWeapon(0);
+        _onFootActions.SwitchToRifle.performed += ctx => _weaponSwitch.SelectWeapon(1);
+        _onFootActions.SwitchToPistol.performed += ctx => _weaponSwitch.SelectWeapon(2);
     }
 
     private void ToggleDebugCamera()
@@ -70,5 +77,10 @@ public class InputManager : MonoBehaviour
         _onFootActions.Disable();
         _menuActions.Disable();
         _debugActions.Disable();
+    }
+
+    private Gun GetActiveGun()
+    {
+        return GetComponentInChildren<Gun>();
     }
 }
