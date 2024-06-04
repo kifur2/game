@@ -1,7 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
-using UnityEngine.Serialization;
 
 public class Gun : MonoBehaviour
 {
@@ -19,9 +18,8 @@ public class Gun : MonoBehaviour
     public ParticleSystem defaultImpact;
 
     public Text ammoDisplay;
-    public AudioSource audioSource;
-    public AudioClip shootAudioClip;
-    public AudioClip reloadAudioClip;
+    public string shootAudioClipName;
+    public string reloadAudioClipName;
 
     private float _nextTimeToFire = 0f;
     public static bool IsReloading = false;
@@ -43,7 +41,11 @@ public class Gun : MonoBehaviour
 
     private IEnumerator ReloadInternal()
     {
-        audioSource.PlayOneShot(reloadAudioClip);
+        if (AudioManager.Instance)
+        {
+            AudioManager.Instance.PlaySfxAtPosition(reloadAudioClipName, gameObject.transform.position, 1f);
+        }
+
         yield return new WaitForSeconds(reloadTime);
 
         if (totalAmmo >= maxAmmo)
@@ -60,7 +62,6 @@ public class Gun : MonoBehaviour
         IsReloading = false;
     }
 
-
     public void Shoot()
     {
         if (PauseManager.IsPaused || ammo <= 0 || !(Time.time >= _nextTimeToFire)) return;
@@ -69,9 +70,10 @@ public class Gun : MonoBehaviour
 
         muzzleFlash.Play();
         ammo--;
-        if (audioSource != null)
+
+        if (AudioManager.Instance)
         {
-            audioSource.PlayOneShot(shootAudioClip);
+            AudioManager.Instance.PlaySfxAtPosition(shootAudioClipName, gameObject.transform.position, 1f);
         }
 
         if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out var hit, range, ~ignoreLayers))
@@ -92,5 +94,4 @@ public class Gun : MonoBehaviour
             }
         }
     }
-
 }

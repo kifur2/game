@@ -7,8 +7,7 @@ public class EnemyBehaviour : MonoBehaviour
 {
     public Transform playerTransform;
     public Target enemyTarget;
-    public AudioClip attackAudioClip;
-    public AudioSource audioSource;
+    private const string AttackAudioClipName = "Enemy Attack";
     public float followDistance = 20f;
     public float attackDistance = 2f;
     public int attackDamage = 10;
@@ -53,7 +52,12 @@ public class EnemyBehaviour : MonoBehaviour
         _isAttacking = true;
         EnableAttack();
         _animation.Play("Attack1");
-        audioSource.PlayOneShot(attackAudioClip);
+        
+        if (AudioManager.Instance)
+        {
+            AudioManager.Instance.PlaySfxAtPosition(AttackAudioClipName, gameObject.transform.position, 1f);
+        }
+        
         yield return new WaitForSeconds(_animation["Attack1"].length);
         DisableAttack();
         _isAttacking = false;

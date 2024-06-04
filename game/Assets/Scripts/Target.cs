@@ -10,8 +10,7 @@ public class Target : MonoBehaviour
     public Transform parentObject;
     private Animation _animation;
 
-    public AudioSource audioSource;
-    public AudioClip hitEffect;
+    private const string HitEffectClipName = "HitEffect";
 
     public MonsterSpawner spawner;
     public ParticleSystem impactParticleSystem;
@@ -25,8 +24,12 @@ public class Target : MonoBehaviour
     {
         if (!_alive) return;
         health -= amount;
-        audioSource.PlayDelayed(0.4f);
-        audioSource.PlayOneShot(hitEffect);
+        
+        if (AudioManager.Instance)
+        {
+            AudioManager.Instance.PlaySfxAtPosition(HitEffectClipName, transform.position, 1f);
+        }
+        
         if (!(health <= 0f)) return;
         _alive = false;
         Die();
@@ -42,10 +45,16 @@ public class Target : MonoBehaviour
         }
 
         Destroy(gameObject, _animation["Death"].length);
+    }
+
+    private void OnDestroy()
+    {
         spawner.spawnedMonsters.Remove(gameObject);
-        if (pickups.Length <= 0) return;
-        var index = Random.Range(0, pickups.Length);
-        var pickupPosition = new Vector3(transform.position.x, transform.position.y + 1f, transform.position.z);
-        Instantiate(pickups[index], pickupPosition, Quaternion.identity, parentObject);
+        if (pickups.Length > 0)
+        {
+            var index = Random.Range(0, pickups.Length);
+            var pickupPosition = new Vector3(transform.position.x, transform.position.y + 1f, transform.position.z);
+            Instantiate(pickups[index], pickupPosition, Quaternion.identity, parentObject);
+        }
     }
 }
