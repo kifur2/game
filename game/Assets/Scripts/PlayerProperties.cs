@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.Serialization;
 
 public class PlayerProperties : MonoBehaviour
 {
@@ -17,6 +18,7 @@ public class PlayerProperties : MonoBehaviour
 
     public static float DamageMultiplier = 1f;
     public static float FireRateMultiplier = 1f;
+    public CharacterDeathManager characterDeathManager;
 
     public enum TemporaryEffect
     {
@@ -37,11 +39,11 @@ public class PlayerProperties : MonoBehaviour
 
         currentHealth -= damage;
         healthBar.SetHealth(currentHealth);
-        if (currentHealth <= 0)
-        {
-            AudioSource.PlayClipAtPoint(deathAudioClip, gameObject.transform.position, 0.4f);
-            Debug.Log("YOU DEAD!");
-        }
+        
+        if (currentHealth > 0) return;
+        
+        AudioSource.PlayClipAtPoint(deathAudioClip, gameObject.transform.position, 0.4f);
+        characterDeathManager.TriggerDeath();
     }
 
     public void Heal(int healAmount = 30)

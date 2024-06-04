@@ -3982,6 +3982,9 @@ MonoBehaviour:
   audioSource: {fileID: 0}
   shootAudioClip: {fileID: 0}
   reloadAudioClip: {fileID: 0}
+  ignoreLayers:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &5722273096958812987
 GameObject:
   m_ObjectHideFlags: 0
@@ -4794,7 +4797,6 @@ GameObject:
   - component: {fileID: 5722273097447575156}
   - component: {fileID: 5722273097447575157}
   - component: {fileID: 5722273097447575154}
-  - component: {fileID: 5722273097447575155}
   m_Layer: 0
   m_Name: Player-character
   m_TagString: Player
@@ -4905,6 +4907,7 @@ MonoBehaviour:
         m_CallState: 2
   deathAudioClip: {fileID: 8300000, guid: aa4a216957b3443e09ce781aff29cb9d, type: 3}
   healthBar: {fileID: 0}
+  characterDeathManager: {fileID: 0}
 --- !u!114 &5722273097447575157
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4935,19 +4938,6 @@ MonoBehaviour:
   walkSpeed: 4
   sprintSpeed: 7
   jumpHeight: 3
---- !u!114 &5722273097447575155
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6328955414113841411}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd16a720cf12813409281b35b688a7fc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  debugCameraController: {fileID: 0}
 --- !u!1 &6691184394843106450
 GameObject:
   m_ObjectHideFlags: 0
@@ -6979,6 +6969,9 @@ MonoBehaviour:
   audioSource: {fileID: 0}
   shootAudioClip: {fileID: 0}
   reloadAudioClip: {fileID: 0}
+  ignoreLayers:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1001 &5722273096228608332
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7071,6 +7064,9 @@ MonoBehaviour:
   audioSource: {fileID: 0}
   shootAudioClip: {fileID: 0}
   reloadAudioClip: {fileID: 0}
+  ignoreLayers:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!4 &5726534395997027922 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4826450088584990, guid: 119551172e2002344983c075ab97ef79, type: 3}

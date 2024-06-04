@@ -10,7 +10,6 @@ public class PauseManager : MonoBehaviour
     public static bool IsPaused;
     [SerializeField] private GameObject pauseMenu;
 
-    // Start is called before the first frame update
     private void Start()
     {
         pauseMenu.SetActive(false);
@@ -46,7 +45,7 @@ public class PauseManager : MonoBehaviour
     {
         Time.timeScale = 1f;
         IsPaused = false;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+        SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex - 1);
     }
 
     public void QuitGame()

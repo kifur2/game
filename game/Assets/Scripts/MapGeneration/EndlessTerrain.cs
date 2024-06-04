@@ -99,6 +99,12 @@ public class EndlessTerrain : MonoBehaviour
         }
     }
 
+    private void OnDestroy()
+    {
+        _terrainChunkDictionary.Clear();
+        _terrainChunksVisibleLastUpdate.Clear();
+    }
+
 
     public class TerrainChunk
     {
