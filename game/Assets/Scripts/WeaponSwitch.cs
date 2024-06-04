@@ -3,18 +3,15 @@ using UnityEngine;
 public class WeaponSwitch : MonoBehaviour
 {
     public int selectedWeapon = 0;
+    private readonly int _weaponsAmount = 3;
 
     private void Start()
     {
         SelectWeapon(0);
     }
 
-    private void Update()
-    {}
-
     public void SelectWeapon(int selectedWeapon)
     {
-        Debug.Log("Select weapon performed for: " + selectedWeapon);
         this.selectedWeapon = selectedWeapon;
 
         if (Gun.ReloadCoroutine != null)
@@ -29,6 +26,19 @@ public class WeaponSwitch : MonoBehaviour
         {
             weapon.gameObject.SetActive(i == selectedWeapon);
             i++;
+        }
+    }
+
+    public void SwitchWeapon(float x)
+    {
+        switch (x)
+        {
+            case > 0:
+                SelectWeapon((selectedWeapon + 1) % _weaponsAmount);
+                break;
+            case < 0:
+                SelectWeapon((selectedWeapon + _weaponsAmount - 1) % _weaponsAmount);
+                break;
         }
     }
 }

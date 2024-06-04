@@ -37,6 +37,7 @@ public class InputManager : MonoBehaviour
         _onFootActions.Sprint.performed += ctx => _motor.Sprint();
         _onFootActions.Shoot.performed += ctx => GetActiveGun()?.Shoot();
         _onFootActions.Reload.performed += ctx => GetActiveGun()?.Reload();
+        _onFootActions.SwitchWeapon.performed += ctx => _weaponSwitch.SwitchWeapon(ctx.ReadValue<float>());
         _onFootActions.SwitchToGun.performed += ctx => _weaponSwitch.SelectWeapon(0);
         _onFootActions.SwitchToRifle.performed += ctx => _weaponSwitch.SelectWeapon(1);
         _onFootActions.SwitchToPistol.performed += ctx => _weaponSwitch.SelectWeapon(2);
