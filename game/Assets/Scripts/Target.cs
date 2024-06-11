@@ -9,6 +9,7 @@ public class Target : MonoBehaviour
     public GameObject[] pickups;
     public Transform parentObject;
     private Animation _animation;
+    public HealthBar healthBar;
 
     private const string HitEffectClipName = "HitEffect";
 
@@ -18,12 +19,17 @@ public class Target : MonoBehaviour
     void Start()
     {
         _animation = GetComponent<Animation>();
+        if (healthBar != null)
+            healthBar.SetMaxHealth(System.Convert.ToInt32(health));
     }
 
     public void TakeDamage(float amount)
     {
         if (!_alive) return;
         health -= amount;
+
+        if (healthBar != null)
+            healthBar.SetHealth((int)healthBar.slider.value - (int)amount);
         
         if (AudioManager.Instance)
         {
