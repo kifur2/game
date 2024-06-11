@@ -12,6 +12,7 @@ public class Target : MonoBehaviour
 
     public AudioSource audioSource;
     public AudioClip hitEffect;
+    public HealthBar healthBar;
 
     public MonsterSpawner spawner;
     public ParticleSystem impactParticleSystem;
@@ -19,12 +20,16 @@ public class Target : MonoBehaviour
     void Start()
     {
         _animation = GetComponent<Animation>();
+        if (healthBar != null)
+            healthBar.SetMaxHealth(System.Convert.ToInt32(health));
     }
 
     public void TakeDamage(float amount)
     {
         if (!_alive) return;
         health -= amount;
+        if (healthBar != null)
+            healthBar.takeDamage(amount);
         audioSource.PlayDelayed(0.4f);
         audioSource.PlayOneShot(hitEffect);
         if (!(health <= 0f)) return;

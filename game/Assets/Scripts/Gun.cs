@@ -26,10 +26,17 @@ public class Gun : MonoBehaviour
     private float _nextTimeToFire = 0f;
     public static bool IsReloading = false;
     public static Coroutine ReloadCoroutine;
+    private float nextTimeToFire = 0;
     public LayerMask ignoreLayers;
 
     private void Update()
     {
+        if (Input.GetButton("Fire1") && ammo > 0 && Time.time >= nextTimeToFire)
+        {
+            nextTimeToFire = Time.time + 1f / fireRate;
+            Shoot();
+        }
+
         ammoDisplay.text = ammo + " | " + totalAmmo;
     }
 
