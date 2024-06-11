@@ -82,13 +82,3 @@ Update Mode: mergeDefaultDependencies
 
 The following packages were added:
   com.unity.postprocessing@3.4.0
-
-=== Tue Jun 11 12:19:49 2024
-
-Packages were changed.
-Update Mode: updateDependencies
-
-The following packages were updated:
-  com.unity.ai.navigation from version 1.0.0-exp.4 to 1.1.5
-  com.unity.cinemachine from version 2.8.9 to 2.9.5
-  com.unity.render-pipelines.universal from version 12.1.14 to 14.0.10
