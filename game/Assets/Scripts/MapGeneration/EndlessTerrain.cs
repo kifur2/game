@@ -118,6 +118,7 @@ public class EndlessTerrain : MonoBehaviour
         private LODMesh _collisionLODMesh;
 
         public MapData MapData;
+        public MapData TreeMapData;
         private bool _mapDataReceived;
         private int _previousLODIndex = -1;
         private NavMeshSurface _navMeshSurface;
@@ -201,21 +202,6 @@ public class EndlessTerrain : MonoBehaviour
                 AddNavMeshLink(this, adjacentChunk, parent);
             }
         }
-        public void CreateCube(Vector3 position, Transform parent)
-        {
-            // Create the cube
-            GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
-
-            // Set the position and scale
-            cube.transform.position = position;
-            cube.transform.localScale = Vector3.one * Scale;
-            cube.transform.parent = parent;
-
-            // Set the color to red
-            Renderer cubeRenderer = cube.GetComponent<Renderer>();
-            cubeRenderer.material = new Material(Shader.Find("Standard"));
-            cubeRenderer.material.color = Color.red;
-        }
 
         public void AddNavMeshLink(TerrainChunk fromChunk, TerrainChunk toChunk, Transform parent)
         {
@@ -236,9 +222,10 @@ public class EndlessTerrain : MonoBehaviour
             navMeshLink.agentTypeID = 0;
         }
 
-        void OnMapDataReceived(MapData mapData)
+        void OnMapDataReceived(MapData mapData, MapData treeMapData)
         {
             MapData = mapData;
+            TreeMapData = treeMapData;
             _mapDataReceived = true;
 
             Texture2D texture2D = TextureGenerator.TextureFromColorMap(mapData.ColorMap, MapGenerator.MapChunkSize,
@@ -271,17 +258,21 @@ public class EndlessTerrain : MonoBehaviour
             _navMeshSurface.BuildNavMesh();
         }
 
+        public void UpdateNavMesh()
+        {
+            _navMeshSurface.UpdateNavMesh(_navMeshSurface.navMeshData);
+        }
+
         public void UpdateTerrainChunk()
         {
             if (!_mapDataReceived) return;
 
             float viewerDistanceFromNearestEdge = Mathf.Sqrt(_bounds.SqrDistance(ViewerPosition));
             bool visible = viewerDistanceFromNearestEdge <= MaxViewDistance;
-            bool buildNavMesh = viewerDistanceFromNearestEdge <= MaxBakeNavDistance;
 
+            int lodIndex = 0;
             if (visible)
             {
-                int lodIndex = 0;
                 for (int i = 0; i < _detailLevels.Length - 1; i++)
                 {
                     if (viewerDistanceFromNearestEdge > _detailLevels[i].visibleDistanceTreshold)
@@ -326,7 +317,7 @@ public class EndlessTerrain : MonoBehaviour
 
             SetVisible(visible);
 
-            if (buildNavMesh)
+            if (visible && lodIndex==0)
             {
                 CreateNavMeshLinks(this, _coords);
                 BuildNavMesh();
@@ -358,7 +349,7 @@ public class EndlessTerrain : MonoBehaviour
             this.updateCallback = updateCallback;
         }
 
-        void OnMeshDataReceived(MeshData meshdata)
+        void OnMeshDataReceived(MeshData meshdata, MeshData treeMeshData)
         {
             mesh = meshdata.CreateMesh();
             hasMesh = true;
