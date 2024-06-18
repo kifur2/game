@@ -45,6 +45,7 @@ public class MonsterSpawner : MonoBehaviour
     {
         if (!_isSpawningWave && spawnedMonsters.Count == 0)
         {
+            _currentWave++;
             StartCoroutine(SpawnWaveWithDelay(3f));
         }
     }

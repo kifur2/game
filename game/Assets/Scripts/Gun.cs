@@ -95,7 +95,7 @@ public class Gun : MonoBehaviour
                     part.transform.parent = t.transform;
                     break;
 
-                case null:
+                default:
                     Instantiate(defaultImpact, hit.point, Quaternion.LookRotation(hit.normal));
                     break;
             }
