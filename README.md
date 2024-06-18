@@ -1,12 +1,8 @@
-## Game: 3D First Person Shooter
+# Ghoul Hunt
 
 <p align="center">
     <img src="https://github.com/kifur2/game/assets/85733696/06db1cb8-2c61-40b4-a37c-f893649ae5c3" alt="Alt Text" width="400" style="border-radius: 100px;" />
 </p>
-
-
-
-
 
 ## Description:
 "3D First Person Shooter" is an action-packed game where the player navigates an infinite map, tasked with defeating endless waves of enemies. Each successive wave grows in difficulty and number, challenging the player to survive as long as possible.
