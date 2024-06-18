@@ -2,7 +2,6 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Threading;
-using UnityEngine.Serialization;
 
 public class MapGenerator : MonoBehaviour
 {
@@ -19,9 +18,11 @@ public class MapGenerator : MonoBehaviour
     public bool useFlatShading;
     [Range(0, 6)] public int editorPreviewLOD;
     public float noiseScale = 0.3f;
+    public float treeNoiseScale = 0.9f;
     public int octaves = 4;
     [Range(0, 1)] public float persistance = 0.5f;
     public float lacunarity = 2f;
+    public float treeLacunarity = 20f;
     public int seed;
 
     public float meshHeightMultiplier;
@@ -31,6 +32,7 @@ public class MapGenerator : MonoBehaviour
 
     public bool autoUpdate = true;
     public TerrainType[] regions;
+
     private static MapGenerator _instance;
 
     private Queue<MapThreadInfo<MapData, MapData>> _mapDataThreadInfoQueue = new();
@@ -52,7 +54,8 @@ public class MapGenerator : MonoBehaviour
 
     public void DrawMapInEditor()
     {
-        MapData mapData = GenerateMapData(Vector2.zero, seed);
+        MapData mapData = GenerateMapData(Vector2.zero, seed, noiseScale, lacunarity);
+        MapData treeMapData = GenerateMapData(Vector2.zero, seed + 2, treeNoiseScale, treeLacunarity);
 
         MapDisplay display = FindObjectOfType<MapDisplay>();
         if (drawMode == DrawMode.NoiseMap)
@@ -81,8 +84,8 @@ public class MapGenerator : MonoBehaviour
 
     void MapDataThread(Vector2 center, Action<MapData, MapData> callback)
     {
-        MapData mapData = GenerateMapData(center, seed);
-        MapData treeMapData = GenerateMapData(center, seed + 1);
+        MapData mapData = GenerateMapData(center, seed, noiseScale, lacunarity);
+        MapData treeMapData = GenerateMapData(center, seed + 2, treeNoiseScale, treeLacunarity);
         lock (_mapDataThreadInfoQueue)
         {
             _mapDataThreadInfoQueue.Enqueue(new MapThreadInfo<MapData, MapData>(callback, mapData, treeMapData));
@@ -127,7 +130,7 @@ public class MapGenerator : MonoBehaviour
         }
     }
 
-    private MapData GenerateMapData(Vector2 center, int currentSeed)
+    private MapData GenerateMapData(Vector2 center, int currentSeed, float noiseScale, float lacunarity)
     {
         float[,] noiseMap = Noise.GenerateNoiseMap(MapChunkSize + 2, MapChunkSize + 2, currentSeed, noiseScale, octaves,
             persistance, lacunarity, center + offset, normalizeMode);

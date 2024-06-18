@@ -5,10 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2adf3fa5-de4c-44b7-a422-f29cfaa37652" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MapGeneration/TreeGenerator.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.game/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.game/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Map Mat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Map Mat.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/OutSourcedPackages/SimpleNaturePack/Prefabs/Tree_01.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/OutSourcedPackages/SimpleNaturePack/Prefabs/Tree_01.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/OutSourcedPackages/SimpleNaturePack/Prefabs/Tree_02.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/OutSourcedPackages/SimpleNaturePack/Prefabs/Tree_02.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MapGenerator.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MapGenerator.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/MapGeneration/EndlessTerrain.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MapGeneration/EndlessTerrain.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/MapGeneration/MapGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MapGeneration/MapGenerator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MapGeneration/TreeGenerator.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MapGeneration/TreeGenerator.cs.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +50,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/HealthBar.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/InputManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/InventoryUI.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Jakub/Desktop/Kuba/studia/TGK/game/game/Assets/Scripts/MapGeneration/EndlessTerrain.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MapGeneration/HideOnPlay.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MapGeneration/MeshGenerator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MonsterSpawner.cs" root0="FORCE_HIGHLIGHTING" />
@@ -150,10 +156,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="22884">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="22884" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -177,7 +183,8 @@
       <workItem from="1717339117837" duration="12126000" />
       <workItem from="1717439523324" duration="9936000" />
       <workItem from="1718443683964" duration="3576000" />
-      <workItem from="1718650981309" duration="3036000" />
+      <workItem from="1718650981309" duration="10866000" />
+      <workItem from="1718695917386" duration="11715000" />
     </task>
     <task id="LOCAL-00001" summary="[4] power-ups">
       <option name="closed" value="true" />
@@ -347,7 +354,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718119988600</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="[57] fixed nav mesh surfaces a bit">
+      <option name="closed" value="true" />
+      <created>1718654573268</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1718654573268</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -381,23 +396,24 @@
     <MESSAGE value="[49] added dying + fixed scene restarting" />
     <MESSAGE value="[49] merge + scroll wheel added" />
     <MESSAGE value="[57] bugfix" />
-    <option name="LAST_COMMIT_MESSAGE" value="[57] bugfix" />
+    <MESSAGE value="[57] fixed nav mesh surfaces a bit" />
+    <option name="LAST_COMMIT_MESSAGE" value="[57] fixed nav mesh surfaces a bit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/MapGeneration/EndlessTerrain.cs</url>
-          <line>59</line>
-          <properties documentPath="C:\Users\Jakub\Desktop\Kuba\studia\TGK\game\game\Assets\Scripts\MapGeneration\EndlessTerrain.cs" containingFunctionPresentation="Method 'UpdateVisibleChunks'">
+          <line>320</line>
+          <properties documentPath="C:\Users\Jakub\Desktop\Kuba\studia\TGK\game\game\Assets\Scripts\MapGeneration\EndlessTerrain.cs" containingFunctionPresentation="Method 'GenerateTrees'">
             <startOffsets>
-              <option value="1955" />
+              <option value="12411" />
             </startOffsets>
             <endOffsets>
-              <option value="1995" />
+              <option value="12463" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="6" />
+          <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

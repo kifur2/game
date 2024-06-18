@@ -1,9 +1,11 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using Unity.AI.Navigation;
 using UnityEngine;
 using UnityEngine.AI;
+using Random = UnityEngine.Random;
 
 public class EndlessTerrain : MonoBehaviour
 {
@@ -16,9 +18,9 @@ public class EndlessTerrain : MonoBehaviour
 
     public LODInfo[] detailLevels;
     public static float MaxViewDistance;
-    public static float MaxBakeNavDistance;
     public Transform viewer;
     public Material mapMaterial;
+    public GameObject[] treePrefab;
 
     public static Vector2 ViewerPosition;
     public static Vector2 ViewerPositionOld;
@@ -35,7 +37,6 @@ public class EndlessTerrain : MonoBehaviour
         MapGenerator = FindObjectOfType<MapGenerator>();
         _chunkSize = MapGenerator.MapChunkSize - 1;
         MaxViewDistance = detailLevels[^1].visibleDistanceTreshold;
-        MaxBakeNavDistance = MaxViewDistance / 4;
         _chunksVisibleInViewDistance = Mathf.RoundToInt(MaxViewDistance / _chunkSize);
         UpdateVisibleChunks();
     }
@@ -74,7 +75,8 @@ public class EndlessTerrain : MonoBehaviour
                 }
                 else
                 {
-                    var newChunk = new TerrainChunk(viewedChunkCoord, _chunkSize, detailLevels, transform, mapMaterial);
+                    var newChunk = new TerrainChunk(viewedChunkCoord, _chunkSize, detailLevels, transform, mapMaterial,
+                        treePrefab);
                     _terrainChunkDictionary.Add(viewedChunkCoord, newChunk);
                 }
             }
@@ -122,10 +124,14 @@ public class EndlessTerrain : MonoBehaviour
         private bool _mapDataReceived;
         private int _previousLODIndex = -1;
         private NavMeshSurface _navMeshSurface;
-        private static List<(Vector2, Vector2)> _createdLinks = new List<(Vector2, Vector2)>();
+        private static List<(Vector2, Vector2)> _createdLinks = new();
+        private GameObject[] _treePrefab;
+        private bool _treesGenerated;
 
-        public TerrainChunk(Vector2 coords, int size, LODInfo[] detailLevels, Transform parent, Material material)
+        public TerrainChunk(Vector2 coords, int size, LODInfo[] detailLevels, Transform parent, Material material,
+            GameObject[] treePrefab)
         {
+            _treePrefab = treePrefab;
             _detailLevels = detailLevels;
             _position = coords * size;
             _bounds = new Bounds(_position, Vector2.one * size);
@@ -248,6 +254,24 @@ public class EndlessTerrain : MonoBehaviour
             return MapGenerator.meshHeightCurve.Evaluate(MapData.HeightMap[x, y]) * MapGenerator.meshHeightMultiplier;
         }
 
+        public float GetHeightAtPositionTrees(Vector2 position)
+        {
+            Vector3 rayStart = new Vector3(position.x, 1000, position.y);
+            float rayLength = 2000;
+
+            Ray ray = new Ray(rayStart, Vector3.down);
+
+            RaycastHit hit;
+
+            if (Physics.Raycast(ray, out hit, rayLength))
+            {
+                return hit.point.y;
+            }
+
+            Debug.LogWarning("Raycast did not hit any mesh.");
+            return -1;
+        }
+
         public void BuildNavMesh()
         {
             if (_navMeshSurface.navMeshData == null)
@@ -262,6 +286,45 @@ public class EndlessTerrain : MonoBehaviour
         {
             _navMeshSurface.UpdateNavMesh(_navMeshSurface.navMeshData);
         }
+
+
+        private void GenerateTrees()
+        {
+            if (_treesGenerated) return;
+            _treesGenerated = true;
+            List<Vector2> existingTreePositions = new List<Vector2>();
+
+            for (int i = 1; i < MapData.HeightMap.GetLength(0) - 1; i++)
+            {
+                for (int j = 1; j < MapData.HeightMap.GetLength(1) - 1; j++)
+                {
+                    if (TreeMapData.HeightMap[i, j] > 0.95)
+                    {
+                        float localX = (i - MapData.HeightMap.GetLength(0) / 2f);
+                        float localZ = (j - MapData.HeightMap.GetLength(1) / 2f);
+
+                        float height = GetHeightAtPositionTrees(new Vector2(
+                            _meshObject.transform.position.x + 2 * localX,
+                            _meshObject.transform.position.z + 2 * localZ));
+                        Vector3 worldPosition =
+                            _meshObject.transform.position + new Vector3(2 * localX, height, 2 * localZ);
+
+                        bool tooClose =
+                            existingTreePositions.Any(pos =>
+                                Vector2.Distance(pos, new Vector2(worldPosition.x, worldPosition.z)) < 3f);
+
+                        if (!tooClose && height > 0.3f && height < 9f)
+                        {
+                            var treeIndex = Random.Range(0, _treePrefab.Length);
+                            var newTree = Instantiate(_treePrefab[treeIndex], worldPosition, Quaternion.identity,
+                                _meshObject.transform);
+                            existingTreePositions.Add(new Vector2(worldPosition.x, worldPosition.z));
+                        }
+                    }
+                }
+            }
+        }
+
 
         public void UpdateTerrainChunk()
         {
@@ -305,6 +368,7 @@ public class EndlessTerrain : MonoBehaviour
                     if (_collisionLODMesh.hasMesh)
                     {
                         _meshCollider.sharedMesh = _collisionLODMesh.mesh;
+                        GenerateTrees();
                     }
                     else if (!_collisionLODMesh.hasRequestedMesh)
                     {
@@ -317,7 +381,7 @@ public class EndlessTerrain : MonoBehaviour
 
             SetVisible(visible);
 
-            if (visible && lodIndex==0)
+            if (visible && lodIndex == 0)
             {
                 CreateNavMeshLinks(this, _coords);
                 BuildNavMesh();
