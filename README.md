@@ -1,8 +1,11 @@
 ## Game: 3D First Person Shooter
 
-<div style="text-align:center">
-    <img src="https://github.com/kifur2/game/assets/85733696/06db1cb8-2c61-40b4-a37c-f893649ae5c3" alt="Alt Text" width="400" />
-</div>
+<p align="center">
+    <img src="https://github.com/kifur2/game/assets/85733696/06db1cb8-2c61-40b4-a37c-f893649ae5c3" alt="Alt Text" width="400" style="border-radius: 100px;" />
+</p>
+
+
+
 
 
 ## Description:
